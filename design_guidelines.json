@@ -1,0 +1,136 @@
+{
+  "project_name": "Sistem Penilaian & Raport Digital SMPN 37 Jakarta",
+  "app_type": "dashboard / saas_app (internal school tool in Bahasa Indonesia)",
+  "language": "Bahasa Indonesia",
+  "theme": {
+    "default_mode": "light",
+    "toggle_supported": true,
+    "primary_archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST + ARCHETYPE 1: ORGANIC & TRUST (Official Education Portal)"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Plus Jakarta Sans, sans-serif",
+      "weights": ["font-semibold", "font-bold", "font-extrabold"],
+      "sizes": {
+        "h1": "text-3xl sm:text-4xl lg:text-5xl tracking-tight font-extrabold",
+        "h2": "text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight",
+        "h3": "text-lg sm:text-xl font-semibold",
+        "h4": "text-base sm:text-lg font-medium"
+      }
+    },
+    "body": {
+      "font_family": "Inter, sans-serif",
+      "sizes": {
+        "base": "text-sm sm:text-base leading-relaxed",
+        "small": "text-xs sm:text-sm text-slate-500",
+        "table_grid": "font-mono text-xs sm:text-sm tabular-nums"
+      }
+    },
+    "forbidden_fonts": ["space grotesk"]
+  },
+  "colors": {
+    "light": {
+      "background": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "surface_border": "#E2E8F0",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "text_muted": "#64748B",
+      "brand_primary": "#1E40AF",
+      "brand_primary_hover": "#1E3A8A",
+      "brand_secondary": "#0284C7",
+      "accent_gold": "#D97706",
+      "kktp_pass": {
+        "bg": "#DCFCE7",
+        "text": "#15803D",
+        "border": "#86EFAC"
+      },
+      "kktp_fail": {
+        "bg": "#FEE2E2",
+        "text": "#B91C1C",
+        "border": "#FCA5A5"
+      }
+    },
+    "dark": {
+      "background": "#0F172A",
+      "surface": "#1E293B",
+      "surface_border": "#334155",
+      "text_primary": "#F8FAFC",
+      "text_secondary": "#CBD5E1",
+      "text_muted": "#94A3B8",
+      "brand_primary": "#3B82F6",
+      "brand_primary_hover": "#2563EB",
+      "brand_secondary": "#38BDF8",
+      "accent_gold": "#F59E0B",
+      "kktp_pass": {
+        "bg": "#064E3B",
+        "text": "#86EFAC",
+        "border": "#059669"
+      },
+      "kktp_fail": {
+        "bg": "#7F1D1D",
+        "text": "#FCA5A5",
+        "border": "#DC2626"
+      }
+    },
+    "forbidden_colors": ["#1B93A4", "#7351B7"]
+  },
+  "visual_enhancers": {
+    "kktp_indicator": "Fixed KKTP threshold = 75. Automatic visual badge & color code (Green for >= 75, Red for < 75).",
+    "table_style": "Dense spreadsheet grid with direct cell inputs, row zebra striping, sticky headers, active focus rings, and paste overlay indicator.",
+    "badges": "Pill shaped for status (Tuntas / Belum Tuntas), high contrast text.",
+    "glassmorphism": "Used selectively on sticky navbar (backdrop-blur-md bg-white/80 dark:bg-slate-900/80)."
+  },
+  "layouts_and_grids": {
+    "login_layout": "Split hero layout with official school banner image on left and crisp login form on right.",
+    "dashboard_layout": "Top navigation header + sub-header with Kelas & Mapel selector pill bar, followed by tabbed content (1. Input Grid Excel / Paste, 2. Manual One-by-One, 3. Cetak Raport Wali Kelas, 4. Leger Nilai Class Summary).",
+    "spreadsheet_grid": "Sticky student info columns (No, NISN, Nama Siswa), direct editable columns (F1, F2, F3, Avg Formatif, S1, S2, S3, Avg Sumatif, Nilai Akhir NA, Status KKTP).",
+    "paste_parser_modal": "Dedicated Paste-from-Excel modal with instant preview table before applying values into grid."
+  },
+  "motion_and_interactions": {
+    "hover_states": "Micro-scale hover on buttons, active row highlight in grid, subtle border shine on inputs.",
+    "transitions": "Specific property transitions (e.g. transition-colors duration-150, transition-transform duration-200). Never use transition: all.",
+    "toast_notifications": "Sonner toasts for auto-save feedback, invalid numerical inputs, paste success summary, and download triggers."
+  },
+  "media": {
+    "school_hero": {
+      "url": "https://images.unsplash.com/photo-1742549586702-c23994895082?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Siswa SMPN 37 Jakarta belajar dan ujian di kelas"
+    },
+    "classroom_teacher": {
+      "url": "https://images.pexels.com/photos/39191922/pexels-photo-39191922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Guru mendampingi siswa di dalam kelas"
+    }
+  },
+  "data_testid_convention": {
+    "rules": "All interactive elements (inputs, select dropdowns, tabs, export buttons, login forms) must feature kebab-case data-testid attributes.",
+    "examples": [
+      "data-testid=\"login-email-input\"",
+      "data-testid=\"login-password-input\"",
+      "data-testid=\"login-submit-button\"",
+      "data-testid=\"select-kelas-dropdown\"",
+      "data-testid=\"select-mapel-dropdown\"",
+      "data-testid=\"grade-grid-table\"",
+      "data-testid=\"grade-cell-f1-student-1\"",
+      "data-testid=\"paste-excel-modal-button\"",
+      "data-testid=\"paste-excel-textarea\"",
+      "data-testid=\"apply-paste-data-button\"",
+      "data-testid=\"download-leger-excel-button\"",
+      "data-testid=\"download-raport-pdf-button\"",
+      "data-testid=\"print-raport-class-button\""
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure all user-facing text is in official, formal Bahasa Indonesia tailored for SMPN 37 Jakarta.",
+    "Provide a pre-seeded set of authentic SMP student data (NISN, Nama Siswa, Kelas 7A/7B/8A/8B/9A, Mata Pelajaran like Matematika, Bahasa Indonesia, IPA, IPS, Bahasa Inggris, PPKn, PJOK, SBK).",
+    "Provide dual grade entry mechanisms: 1) Interactive Excel-like spreadsheet table (direct input & paste parser), 2) Manual student-by-student form card with step progress.",
+    "Include live automatic grade calculations: Average Formatif = (F1+F2+F3)/3, Average Sumatif = (S1+S2+S3)/3, Nilai Akhir (NA) = (Avg Formatif + Avg Sumatif)/2, KKTP status (>= 75 Tuntas, < 75 Belum Tuntas).",
+    "Implement Wali Kelas section with PDF generation (or printable print preview template) for both individual student Raport and class batch Raport.",
+    "Implement Excel Leger download functionality using xlsx / sheetjs or downloadable blob for class grade ledger.",
+    "Ensure dark mode toggle is available in top navigation bar.",
+    "Never use generic centered layouts or unstyled default HTML select boxes; use customized Shadcn primitives or styled components."
+  ]
+},
+overwrite: true,
+path: "/app/design_guidelines.json"
+} Tamil: false

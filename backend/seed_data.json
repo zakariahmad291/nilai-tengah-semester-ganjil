@@ -1,0 +1,6118 @@
+{
+ "mapel": [
+  "Pendidikan Agama dan Budi Pekerti",
+  "Pendidikan Pancasila",
+  "Bahasa Indonesia",
+  "Matematika",
+  "Ilmu Pengetahuan Alam",
+  "Ilmu Pengetahuan Sosial",
+  "Bahasa Inggris",
+  "Pendidikan Jasmani, Olahraga, dan Kesehatan",
+  "Informatika",
+  "Prakarya"
+ ],
+ "walas": [
+  {
+   "nama": "Desima Silalahi, M.Pd.",
+   "kelas": "7A"
+  },
+  {
+   "nama": "Robiatul Adawiyah, S.Sos.I",
+   "kelas": "7B"
+  },
+  {
+   "nama": "Zahrowati, M.Pd.",
+   "kelas": "7C"
+  },
+  {
+   "nama": "Rini Suharwanti, S.Pd.",
+   "kelas": "7D"
+  },
+  {
+   "nama": "Heri Fajrin, M.Pd.",
+   "kelas": "7E"
+  },
+  {
+   "nama": "Tria Indiani Fitria, M.Pd.",
+   "kelas": "7F"
+  },
+  {
+   "nama": "Priliatiwi, S.Pd.",
+   "kelas": "7G"
+  },
+  {
+   "nama": "Khairulloh, S.Pd.I",
+   "kelas": "7H"
+  },
+  {
+   "nama": "Wahyuni Marminingsih, M.Pd.",
+   "kelas": "8A"
+  },
+  {
+   "nama": "Siti Rohayah, S.Pd.",
+   "kelas": "8B"
+  },
+  {
+   "nama": "Kurnia Citra Juniarti, S.Pd.",
+   "kelas": "8C"
+  },
+  {
+   "nama": "Rusmi, S.Pd.",
+   "kelas": "8D"
+  },
+  {
+   "nama": "Erna Kurniasih, S.Pd.",
+   "kelas": "8E"
+  },
+  {
+   "nama": "Muhammad Ermawan, S.Pd., M.M.",
+   "kelas": "8F"
+  },
+  {
+   "nama": "Zakaria Ahmad, S.Pd.",
+   "kelas": "8G"
+  },
+  {
+   "nama": "Siti Saroh, S.Pd.",
+   "kelas": "8H"
+  },
+  {
+   "nama": "Rusmiyati, S.Pd.",
+   "kelas": "9A"
+  },
+  {
+   "nama": "Angwar Sadad, S.Pd.",
+   "kelas": "9B"
+  },
+  {
+   "nama": "Fitrah Zubaidi, M.Pd.",
+   "kelas": "9C"
+  },
+  {
+   "nama": "Nining Priyantini, S.T.",
+   "kelas": "9D"
+  },
+  {
+   "nama": "Yustinus Widodo, M.Pd.",
+   "kelas": "9E"
+  },
+  {
+   "nama": "Widodo, S.Pd.",
+   "kelas": "9F"
+  },
+  {
+   "nama": "Siti Nur Azizah, S.Pd.",
+   "kelas": "9G"
+  },
+  {
+   "nama": "Afif Iwantono, S.Pd.",
+   "kelas": "9H"
+  }
+ ],
+ "siswa": [
+  {
+   "nama": "ABDULLAH AR-RASYID",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125409580",
+   "kelas": "9A"
+  },
+  {
+   "nama": "A'ISYAH ZAHRAA HALWANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0113570499",
+   "kelas": "9A"
+  },
+  {
+   "nama": "ALYA ATHAILLAH PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126011223",
+   "kelas": "9A"
+  },
+  {
+   "nama": "ANASTASIA RASTA AURELYA",
+   "jk": "P",
+   "agama": "Katholik",
+   "nisn": "0116102862",
+   "kelas": "9A"
+  },
+  {
+   "nama": "ARJUNA DWI SATRIA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3116305880",
+   "kelas": "9A"
+  },
+  {
+   "nama": "ATAYA DEVDY PRATHAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0111790993",
+   "kelas": "9A"
+  },
+  {
+   "nama": "ATHAYA RAFFA GUNAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0122767242",
+   "kelas": "9A"
+  },
+  {
+   "nama": "AULIA EKA SAPUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118581916",
+   "kelas": "9A"
+  },
+  {
+   "nama": "AZKA GADIZA WAHYUDI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112944871",
+   "kelas": "9A"
+  },
+  {
+   "nama": "DEYA CALLYSTA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0103618622",
+   "kelas": "9A"
+  },
+  {
+   "nama": "FAHRI MUHAMMAD DZAKIR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0116461093",
+   "kelas": "9A"
+  },
+  {
+   "nama": "GERALDO ERIC PRADIPTA",
+   "jk": "L",
+   "agama": "Katholik",
+   "nisn": "0118753820",
+   "kelas": "9A"
+  },
+  {
+   "nama": "HIKARI KRISNA VIDYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111779789",
+   "kelas": "9A"
+  },
+  {
+   "nama": "HIKARU LANGIT IYURI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118632060",
+   "kelas": "9A"
+  },
+  {
+   "nama": "HIRMISAL HARAMISAH KHALQILLAH YUSUF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119753063",
+   "kelas": "9A"
+  },
+  {
+   "nama": "ILMINAA INSYIRA SOFYAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111131017",
+   "kelas": "9A"
+  },
+  {
+   "nama": "INAYYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117639432",
+   "kelas": "9A"
+  },
+  {
+   "nama": "JASMIN AINI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0113416249",
+   "kelas": "9A"
+  },
+  {
+   "nama": "MALIK AL FAHRIZ",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115718090",
+   "kelas": "9A"
+  },
+  {
+   "nama": "MUHAMMAD NOAH IBRAHIM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3114115550",
+   "kelas": "9A"
+  },
+  {
+   "nama": "MUHAMMAD RIZKY RIDHO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112182945",
+   "kelas": "9A"
+  },
+  {
+   "nama": "NADA NADIFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3116795152",
+   "kelas": "9A"
+  },
+  {
+   "nama": "NAJWA ANDINI SURYO ANANTHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114005950",
+   "kelas": "9A"
+  },
+  {
+   "nama": "NASYWA ARISANTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111370760",
+   "kelas": "9A"
+  },
+  {
+   "nama": "NEVISYA KHAIRUNISA DWIYANTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116374307",
+   "kelas": "9A"
+  },
+  {
+   "nama": "PETRUS BOY HAMONANGAN KOTEN",
+   "jk": "L",
+   "agama": "Katholik",
+   "nisn": "0118401174",
+   "kelas": "9A"
+  },
+  {
+   "nama": "PUTRI DANI FITRIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0113693943",
+   "kelas": "9A"
+  },
+  {
+   "nama": "RAISYA DINARA ANANDITA VADYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0128367274",
+   "kelas": "9A"
+  },
+  {
+   "nama": "RISMA MELATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0127626375",
+   "kelas": "9A"
+  },
+  {
+   "nama": "RIZZYO AL FAROBBY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118779685",
+   "kelas": "9A"
+  },
+  {
+   "nama": "SALSABILA JANUARISA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122641487",
+   "kelas": "9A"
+  },
+  {
+   "nama": "SANDRA KIRANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111781855",
+   "kelas": "9A"
+  },
+  {
+   "nama": "SHAQUEEL AL FATTAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0126940207",
+   "kelas": "9A"
+  },
+  {
+   "nama": "TUHFAH ASHILAH KHANSA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115722350",
+   "kelas": "9A"
+  },
+  {
+   "nama": "VANIA CRISELDA DAMARPATI *",
+   "jk": "P",
+   "agama": "Katholik",
+   "nisn": "0112267888",
+   "kelas": "9A"
+  },
+  {
+   "nama": "VENDY PETRIC SEPTIYANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115231107",
+   "kelas": "9A"
+  },
+  {
+   "nama": "AFIKAH ARYANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124817757",
+   "kelas": "9B"
+  },
+  {
+   "nama": "AISYABILLAH RINDRA PRASTITI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0121996448",
+   "kelas": "9B"
+  },
+  {
+   "nama": "ALVARIZA ADIPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0113863664",
+   "kelas": "9B"
+  },
+  {
+   "nama": "ARKAN ABI SAMI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0117366616",
+   "kelas": "9B"
+  },
+  {
+   "nama": "ARSENIO DECHRIS ARRAFIF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0128333042",
+   "kelas": "9B"
+  },
+  {
+   "nama": "AULIA RAHMA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118517230",
+   "kelas": "9B"
+  },
+  {
+   "nama": "AZRIL AKBAR AL RASID",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0104908615",
+   "kelas": "9B"
+  },
+  {
+   "nama": "CAHAYA MALIKA MAHARANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118927985",
+   "kelas": "9B"
+  },
+  {
+   "nama": "DAVINNA PERMATA SARI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117251056",
+   "kelas": "9B"
+  },
+  {
+   "nama": "DINDA ASYA MYEASHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0119943463",
+   "kelas": "9B"
+  },
+  {
+   "nama": "FADIKO CELVIN ARDIYANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124861500",
+   "kelas": "9B"
+  },
+  {
+   "nama": "FAJRIL ONIX AHMAD PRIANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0116519245",
+   "kelas": "9B"
+  },
+  {
+   "nama": "IMMANUEL NATHAN LUMBAN TOBING",
+   "jk": "L",
+   "agama": "Katholik",
+   "nisn": "0127880112",
+   "kelas": "9B"
+  },
+  {
+   "nama": "IRHAM YASYA RAHMAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112523421",
+   "kelas": "9B"
+  },
+  {
+   "nama": "JANETA AQILAH NUR RIVI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124669246",
+   "kelas": "9B"
+  },
+  {
+   "nama": "JAVIER HERNANDES CHICHARITO",
+   "jk": "L",
+   "agama": "Katholik",
+   "nisn": "0115081333",
+   "kelas": "9B"
+  },
+  {
+   "nama": "JESSICA WIDYA PUTERI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116502724",
+   "kelas": "9B"
+  },
+  {
+   "nama": "KHALID MUHAMMAD RIZKY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124138487",
+   "kelas": "9B"
+  },
+  {
+   "nama": "KINETA SHIRA KAYANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3124744905",
+   "kelas": "9B"
+  },
+  {
+   "nama": "LUKITA SABRINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0129881624",
+   "kelas": "9B"
+  },
+  {
+   "nama": "MELLYSA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0113386108",
+   "kelas": "9B"
+  },
+  {
+   "nama": "MUHAMAD RAFIF SHANDRYAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0114817239",
+   "kelas": "9B"
+  },
+  {
+   "nama": "MUHAMMAD APRILIAN SYAH PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3100932394",
+   "kelas": "9B"
+  },
+  {
+   "nama": "MUHAMMAD NAUFAL AZZAM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115975206",
+   "kelas": "9B"
+  },
+  {
+   "nama": "MUHAMMAD YAFI ABYAN HUSEIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112688584",
+   "kelas": "9B"
+  },
+  {
+   "nama": "NABILA BUNGA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0121544808",
+   "kelas": "9B"
+  },
+  {
+   "nama": "NADIA AMIRA AZIZ",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118130591",
+   "kelas": "9B"
+  },
+  {
+   "nama": "NADYRA FAYZAGINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112987484",
+   "kelas": "9B"
+  },
+  {
+   "nama": "NAJWA SALSABILLA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117938324",
+   "kelas": "9B"
+  },
+  {
+   "nama": "NAYMATUZ ZAHRA ERSETYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0129725074",
+   "kelas": "9B"
+  },
+  {
+   "nama": "PASKALIS ALBERT APRILIANO",
+   "jk": "L",
+   "agama": "Katholik",
+   "nisn": "0113891035",
+   "kelas": "9B"
+  },
+  {
+   "nama": "PETRUS IVANDER AMA LIAN",
+   "jk": "L",
+   "agama": "Katholik",
+   "nisn": "3121369499",
+   "kelas": "9B"
+  },
+  {
+   "nama": "RAHMA AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0106734279",
+   "kelas": "9B"
+  },
+  {
+   "nama": "RAISANDY ADITYA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125951119",
+   "kelas": "9B"
+  },
+  {
+   "nama": "RENDI PRAYOGA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0122679811",
+   "kelas": "9B"
+  },
+  {
+   "nama": "SEFINA KHUSNUL KHOTIMAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114843064",
+   "kelas": "9B"
+  },
+  {
+   "nama": "AFIYAH SAFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3119677477",
+   "kelas": "9C"
+  },
+  {
+   "nama": "AINA APRILIA SAHARANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122153875",
+   "kelas": "9C"
+  },
+  {
+   "nama": "AMELIA AMANDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115673425",
+   "kelas": "9C"
+  },
+  {
+   "nama": "ANANDA ALFIORE",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122938284",
+   "kelas": "9C"
+  },
+  {
+   "nama": "ANANDA ATHALARIQ RASYAD GIBRAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0114571244",
+   "kelas": "9C"
+  },
+  {
+   "nama": "ANANDA NUR ASIYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3113299953",
+   "kelas": "9C"
+  },
+  {
+   "nama": "BILLY MAHARDIKA SHAKTA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119609078",
+   "kelas": "9C"
+  },
+  {
+   "nama": "BISMA LUTHFI PRASETIO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119579841",
+   "kelas": "9C"
+  },
+  {
+   "nama": "BISMA WIJAYA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129326184",
+   "kelas": "9C"
+  },
+  {
+   "nama": "ELYSIA ESTELLA SIAGIAN",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "3123585825",
+   "kelas": "9C"
+  },
+  {
+   "nama": "EVANDER PUTRO SUBEKTI",
+   "jk": "L",
+   "agama": "Kristen",
+   "nisn": "0124457068",
+   "kelas": "9C"
+  },
+  {
+   "nama": "FAKHIR ARSYL SYA'BANI *",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0114556522",
+   "kelas": "9C"
+  },
+  {
+   "nama": "IQBAL AL FAHRIZI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3119836276",
+   "kelas": "9C"
+  },
+  {
+   "nama": "IVANA CHARISSA PUTRIE",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0119782701",
+   "kelas": "9C"
+  },
+  {
+   "nama": "MUHAMMAD AR RASYID",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3108760599",
+   "kelas": "9C"
+  },
+  {
+   "nama": "MUHAMMAD RASYAD SURYAKUSUMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0128112812",
+   "kelas": "9C"
+  },
+  {
+   "nama": "MUHAMMAD RIZKI SYAHBANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115276538",
+   "kelas": "9C"
+  },
+  {
+   "nama": "NAOMI MYSHA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0106982507",
+   "kelas": "9C"
+  },
+  {
+   "nama": "NIZAR AUFA NADHIF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0114966694",
+   "kelas": "9C"
+  },
+  {
+   "nama": "PAKSI RAHMAT RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3130588525",
+   "kelas": "9C"
+  },
+  {
+   "nama": "RADITHYA KENCANA YANNI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119157145",
+   "kelas": "9C"
+  },
+  {
+   "nama": "REZA NUR FADHILAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0116332154",
+   "kelas": "9C"
+  },
+  {
+   "nama": "RHEGHYNA PUJAKUSUMA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126776913",
+   "kelas": "9C"
+  },
+  {
+   "nama": "SABRINA DANIA KAMAL ARWONDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112989988",
+   "kelas": "9C"
+  },
+  {
+   "nama": "SARAH HONEY ALEYA SIREGAR",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "0129654442",
+   "kelas": "9C"
+  },
+  {
+   "nama": "SATRIA AZKA NASUHA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119897252",
+   "kelas": "9C"
+  },
+  {
+   "nama": "SEKAR PUTRI APRIANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3115298756",
+   "kelas": "9C"
+  },
+  {
+   "nama": "SHAYNA ARKANANTA PRIYANITA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111033610",
+   "kelas": "9C"
+  },
+  {
+   "nama": "SYAFIQH PUTRA WINATA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119380141",
+   "kelas": "9C"
+  },
+  {
+   "nama": "SYAFIRA ISTIQOMAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111820939",
+   "kelas": "9C"
+  },
+  {
+   "nama": "THALITA HASNA AMALIYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114528559",
+   "kelas": "9C"
+  },
+  {
+   "nama": "TRI BUANA RAJA SULAIMAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118009394",
+   "kelas": "9C"
+  },
+  {
+   "nama": "YUSUF RANDI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118267847",
+   "kelas": "9C"
+  },
+  {
+   "nama": "ZACHARY AQSHA SYARIF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0126114770",
+   "kelas": "9C"
+  },
+  {
+   "nama": "ZIA YUNIA AZZARA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112184939",
+   "kelas": "9C"
+  },
+  {
+   "nama": "ADHELIA SEPTIANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128291933",
+   "kelas": "9D"
+  },
+  {
+   "nama": "ADINDA KEYSHA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118279984",
+   "kelas": "9D"
+  },
+  {
+   "nama": "AIRA KHANSA APRILIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0119638793",
+   "kelas": "9D"
+  },
+  {
+   "nama": "AISYAH NUR FAUZIAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115968194",
+   "kelas": "9D"
+  },
+  {
+   "nama": "ANANDA KEVIN PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0123566058",
+   "kelas": "9D"
+  },
+  {
+   "nama": "BINTANG PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3109425276",
+   "kelas": "9D"
+  },
+  {
+   "nama": "CAHAYA BELLA ALFIAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111757897",
+   "kelas": "9D"
+  },
+  {
+   "nama": "CHAMELIA PUSPITA HATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0107666853",
+   "kelas": "9D"
+  },
+  {
+   "nama": "CUT KIANA SYBIL",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117956067",
+   "kelas": "9D"
+  },
+  {
+   "nama": "FATHIR AZKALIF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0117062216",
+   "kelas": "9D"
+  },
+  {
+   "nama": "IBNU SHAFA ARRABANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0122409383",
+   "kelas": "9D"
+  },
+  {
+   "nama": "IRFAN FACHRI ARDIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112813358",
+   "kelas": "9D"
+  },
+  {
+   "nama": "KHAYYIRA MYESHA ZALNIE",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0129129604",
+   "kelas": "9D"
+  },
+  {
+   "nama": "KIRANA ANINDYA SAFITRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112332712",
+   "kelas": "9D"
+  },
+  {
+   "nama": "LILIEN SALSABIIL EWIDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117293937",
+   "kelas": "9D"
+  },
+  {
+   "nama": "MUHAMMAD AZZAM RABBANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0106839373",
+   "kelas": "9D"
+  },
+  {
+   "nama": "MUHAMMAD ELFANDRA SETIAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124542779",
+   "kelas": "9D"
+  },
+  {
+   "nama": "MUHAMMAD GANDHI AZZIDAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0123832847",
+   "kelas": "9D"
+  },
+  {
+   "nama": "NILA RATMAWATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118345656",
+   "kelas": "9D"
+  },
+  {
+   "nama": "NOIS FEBRIYAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118314690",
+   "kelas": "9D"
+  },
+  {
+   "nama": "PRADIPTHA RADITYA ARIA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0111238840",
+   "kelas": "9D"
+  },
+  {
+   "nama": "QONITA AQILA ASKANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116742643",
+   "kelas": "9D"
+  },
+  {
+   "nama": "QUEEN KHADIJA DIMARIA WIDYANTO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124308141",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RADITYA AGUNG RAMADAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115241680",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RADITYA AQILA PRANAJA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0121770585",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RADITYA RIFFATURRAHMAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0128568966",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RAEESA ZALIKHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117206885",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RAFAEL JIREH TAMBUNAN",
+   "jk": "L",
+   "agama": "Kristen",
+   "nisn": "0113839953",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RAFQAH DENIYAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3118770360",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RAHMA ARZAHRIN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0113385945",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RAMITA MAWANGI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115032501",
+   "kelas": "9D"
+  },
+  {
+   "nama": "RURUH GHAISSANI FIRDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111565706",
+   "kelas": "9D"
+  },
+  {
+   "nama": "STEFANI CHRISTIAN VINA BRITTANY",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "0115616605",
+   "kelas": "9D"
+  },
+  {
+   "nama": "VELLYTA APRILLIA YOTA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114174324",
+   "kelas": "9D"
+  },
+  {
+   "nama": "VIRGIANZA SYALWA KASACIMA AGINDHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115627658",
+   "kelas": "9D"
+  },
+  {
+   "nama": "AFIFFAH AYYATUL HUSNA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114493756",
+   "kelas": "9E"
+  },
+  {
+   "nama": "ALVINO RAKHA VERDIANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115068785",
+   "kelas": "9E"
+  },
+  {
+   "nama": "AMIRA WANDA SAFITRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118786530",
+   "kelas": "9E"
+  },
+  {
+   "nama": "ARDHI MAULANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119350449",
+   "kelas": "9E"
+  },
+  {
+   "nama": "AURELIO RAHADIAN RIFAI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0113761997",
+   "kelas": "9E"
+  },
+  {
+   "nama": "AYASHA ATSIILAH JULIAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111673025",
+   "kelas": "9E"
+  },
+  {
+   "nama": "BILQIS KHANZA ALIYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115257425",
+   "kelas": "9E"
+  },
+  {
+   "nama": "CARISABELLA MAEMI KIRANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0123182791",
+   "kelas": "9E"
+  },
+  {
+   "nama": "DWI NURUL FAUZIAH *",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116742670",
+   "kelas": "9E"
+  },
+  {
+   "nama": "FITRI NUR RAHMAWATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0119639031",
+   "kelas": "9E"
+  },
+  {
+   "nama": "JAHRANA SAPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0111443559",
+   "kelas": "9E"
+  },
+  {
+   "nama": "JASMINE LINTANG RAHMADANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114719614",
+   "kelas": "9E"
+  },
+  {
+   "nama": "KENNETH TIO ALEXANDRO TAMPUBOLON",
+   "jk": "L",
+   "agama": "Kristen",
+   "nisn": "0127507100",
+   "kelas": "9E"
+  },
+  {
+   "nama": "KINANTI ARDHIA PRAMESTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0123409632",
+   "kelas": "9E"
+  },
+  {
+   "nama": "MUHAMAD IRSYAD ALBIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119326335",
+   "kelas": "9E"
+  },
+  {
+   "nama": "MUHAMMAD AL GHANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0113392078",
+   "kelas": "9E"
+  },
+  {
+   "nama": "MUHAMMAD EVAN ZIGGY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0116776600",
+   "kelas": "9E"
+  },
+  {
+   "nama": "MUHAMMAD FAKIH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124511236",
+   "kelas": "9E"
+  },
+  {
+   "nama": "MUHAMMAD HANAFI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0105185950",
+   "kelas": "9E"
+  },
+  {
+   "nama": "NATANAEL PUTRA DEWA",
+   "jk": "L",
+   "agama": "Kristen",
+   "nisn": "0118086121",
+   "kelas": "9E"
+  },
+  {
+   "nama": "ORIZA AQILA VALERIE",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112514129",
+   "kelas": "9E"
+  },
+  {
+   "nama": "QONITA SYAWALINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111996653",
+   "kelas": "9E"
+  },
+  {
+   "nama": "RAFA AMMAR SULTAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0122608464",
+   "kelas": "9E"
+  },
+  {
+   "nama": "RAFFI AKBAR RAMADHANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118357403",
+   "kelas": "9E"
+  },
+  {
+   "nama": "RAHEL BASARIA RONAULI MARBUN",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "0112628658",
+   "kelas": "9E"
+  },
+  {
+   "nama": "RIFDHA HARMELYTHA ACHMAD",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0105237815",
+   "kelas": "9E"
+  },
+  {
+   "nama": "RIZKY ALFARIJI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3117703069",
+   "kelas": "9E"
+  },
+  {
+   "nama": "SATRIA ADJIE BAYU PAMUNGKAS",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118976543",
+   "kelas": "9E"
+  },
+  {
+   "nama": "SULTHAN NABIL FAUZAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112561914",
+   "kelas": "9E"
+  },
+  {
+   "nama": "SYIFA NUR SOLEHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0095745338",
+   "kelas": "9E"
+  },
+  {
+   "nama": "TIARA VESPIOLA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112901245",
+   "kelas": "9E"
+  },
+  {
+   "nama": "UMU HANI KHOIRUNISA *",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3121590277",
+   "kelas": "9E"
+  },
+  {
+   "nama": "YOGI FABIAGIE",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3106361444",
+   "kelas": "9E"
+  },
+  {
+   "nama": "YUSUF ALFARIZQI PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115381690",
+   "kelas": "9E"
+  },
+  {
+   "nama": "ZAHRA AULIA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112950872",
+   "kelas": "9E"
+  },
+  {
+   "nama": "ACHMAD UBAYDILLAH OVIANDI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122377813",
+   "kelas": "9F"
+  },
+  {
+   "nama": "ADHITYA RIZKY RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0108073091",
+   "kelas": "9F"
+  },
+  {
+   "nama": "ARAFAH JEREMY MAGALA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0111202632",
+   "kelas": "9F"
+  },
+  {
+   "nama": "ATIKA SABRINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115375670",
+   "kelas": "9F"
+  },
+  {
+   "nama": "AVIKA AFFIANTHY",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0119301218",
+   "kelas": "9F"
+  },
+  {
+   "nama": "DAMAR PRANAJA RIVAI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115347724",
+   "kelas": "9F"
+  },
+  {
+   "nama": "DINAYA KIRANA GENDIS PRAMONO *",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0113438437",
+   "kelas": "9F"
+  },
+  {
+   "nama": "FADHLINA MAULIDA SYIFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111416607",
+   "kelas": "9F"
+  },
+  {
+   "nama": "FANESA FEBIOLLA SIHOMBING",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0088114683",
+   "kelas": "9F"
+  },
+  {
+   "nama": "FELISHA AMELIA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117647885",
+   "kelas": "9F"
+  },
+  {
+   "nama": "FIRLI MARLYNA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114997354",
+   "kelas": "9F"
+  },
+  {
+   "nama": "GHINA AULIA FARRAS",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0113119516",
+   "kelas": "9F"
+  },
+  {
+   "nama": "HAURA KHALISA AGUSTINA HARNOTO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3115967380",
+   "kelas": "9F"
+  },
+  {
+   "nama": "KANAYA YUNITA HARDI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116417728",
+   "kelas": "9F"
+  },
+  {
+   "nama": "LUHUR CIPTO SEJATI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0113401610",
+   "kelas": "9F"
+  },
+  {
+   "nama": "MAKSALMINA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0117888553",
+   "kelas": "9F"
+  },
+  {
+   "nama": "MUHAMMAD FARIS ARRAFI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0114561354",
+   "kelas": "9F"
+  },
+  {
+   "nama": "MUHAMMAD FARLY AKBAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0102257704",
+   "kelas": "9F"
+  },
+  {
+   "nama": "MUHAMMAD NUR FADILAH *",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0102556339",
+   "kelas": "9F"
+  },
+  {
+   "nama": "NAYLA NURAMALINA DANURDARA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118373871",
+   "kelas": "9F"
+  },
+  {
+   "nama": "NAYLA NURASYIFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115415067",
+   "kelas": "9F"
+  },
+  {
+   "nama": "NUR SITA KURNIATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115728225",
+   "kelas": "9F"
+  },
+  {
+   "nama": "NURITA DEWI ASTUTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114067654",
+   "kelas": "9F"
+  },
+  {
+   "nama": "QUEENA CALISTA AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117318001",
+   "kelas": "9F"
+  },
+  {
+   "nama": "OK AL FAIRUZ ASMARA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0113667234",
+   "kelas": "9F"
+  },
+  {
+   "nama": "RALLY FUDHAIL TATUM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0122031754",
+   "kelas": "9F"
+  },
+  {
+   "nama": "RAMADHAN AKHMAD FAWAZAYDIN HERDIAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119579346",
+   "kelas": "9F"
+  },
+  {
+   "nama": "RISA RILOVY GERHARD SIHITE",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111183325",
+   "kelas": "9F"
+  },
+  {
+   "nama": "ROBY DARMAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0117493509",
+   "kelas": "9F"
+  },
+  {
+   "nama": "SAFIRA NAFISA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124468616",
+   "kelas": "9F"
+  },
+  {
+   "nama": "SALWA NADHIFA CHAIRUNNISA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0108847237",
+   "kelas": "9F"
+  },
+  {
+   "nama": "SYAFA AMALYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117329779",
+   "kelas": "9F"
+  },
+  {
+   "nama": "TITANIA DWI SAFA SASONGKO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118280894",
+   "kelas": "9F"
+  },
+  {
+   "nama": "ZAHIRA MUZIYANTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112210233",
+   "kelas": "9F"
+  },
+  {
+   "nama": "ZAHRAH ZAHRIYA AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115884999",
+   "kelas": "9F"
+  },
+  {
+   "nama": "ADZKA AHMAD ZIDANE ADZHIMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118141973",
+   "kelas": "9G"
+  },
+  {
+   "nama": "AFIQAH CHAERANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115432988",
+   "kelas": "9G"
+  },
+  {
+   "nama": "AL PUTRA AMALIAWI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124015189",
+   "kelas": "9G"
+  },
+  {
+   "nama": "ALIFIA SABRINA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118942296",
+   "kelas": "9G"
+  },
+  {
+   "nama": "ALISYA ADINDA SYIFA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122634767",
+   "kelas": "9G"
+  },
+  {
+   "nama": "ARKITTO KEANNU BAGUS",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119749054",
+   "kelas": "9G"
+  },
+  {
+   "nama": "CAHYA KRISMUJIATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114859678",
+   "kelas": "9G"
+  },
+  {
+   "nama": "DELVIN AZKA SOMANTRI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115483240",
+   "kelas": "9G"
+  },
+  {
+   "nama": "DESYIRAH NADIR FIRDAUS",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0107526825",
+   "kelas": "9G"
+  },
+  {
+   "nama": "DEVI SAPUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118720971",
+   "kelas": "9G"
+  },
+  {
+   "nama": "DEVIN NAZRIEL PRAYUHDA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112736445",
+   "kelas": "9G"
+  },
+  {
+   "nama": "DEVINA TRI HAPSARI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112379506",
+   "kelas": "9G"
+  },
+  {
+   "nama": "FARHAN RAIB APRILIANO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115234318",
+   "kelas": "9G"
+  },
+  {
+   "nama": "FARIZ RAFFASYA PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0107485527",
+   "kelas": "9G"
+  },
+  {
+   "nama": "FATIYAH ANNI AZZAHRA HIDAYAT",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114639187",
+   "kelas": "9G"
+  },
+  {
+   "nama": "IMANDA AMALIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0112447038",
+   "kelas": "9G"
+  },
+  {
+   "nama": "INTAN AZKHADIA SHADDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3110394805",
+   "kelas": "9G"
+  },
+  {
+   "nama": "MALIKA PUTRI NADIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124649035",
+   "kelas": "9G"
+  },
+  {
+   "nama": "MANGGALA PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0113436824",
+   "kelas": "9G"
+  },
+  {
+   "nama": "MUHAMMAD AZKA BRILLIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3112405650",
+   "kelas": "9G"
+  },
+  {
+   "nama": "MUHAMMAD IRFAN SAMUDRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119510154",
+   "kelas": "9G"
+  },
+  {
+   "nama": "MUHAMMAD RIZKI ABDILAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0114920939",
+   "kelas": "9G"
+  },
+  {
+   "nama": "MUHAMMAD ZIDAN AL GOZHALI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118921057",
+   "kelas": "9G"
+  },
+  {
+   "nama": "NAUFAL AYYASH RAFIIANDRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118720777",
+   "kelas": "9G"
+  },
+  {
+   "nama": "NAYLA MARIZKA VIZIYANTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3115429541",
+   "kelas": "9G"
+  },
+  {
+   "nama": "NUR HAFNI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0119898868",
+   "kelas": "9G"
+  },
+  {
+   "nama": "PRASAKHA MAHARDHIKA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0129546031",
+   "kelas": "9G"
+  },
+  {
+   "nama": "PUTRI YASMINE",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118961947",
+   "kelas": "9G"
+  },
+  {
+   "nama": "QUINNA ALYSHA ARIEF",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3115551487",
+   "kelas": "9G"
+  },
+  {
+   "nama": "RAFFA MAULANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3094176770",
+   "kelas": "9G"
+  },
+  {
+   "nama": "REISYA YURITANIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116810419",
+   "kelas": "9G"
+  },
+  {
+   "nama": "RISMA APRILIA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115080979",
+   "kelas": "9G"
+  },
+  {
+   "nama": "RIZCHELL ASHLEY RAMADHANI LANG",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0127629002",
+   "kelas": "9G"
+  },
+  {
+   "nama": "VINA SILVIA NABILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118409250",
+   "kelas": "9G"
+  },
+  {
+   "nama": "ZAHRA ALIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116094538",
+   "kelas": "9G"
+  },
+  {
+   "nama": "ALIFAH CAHYA MUSTIKA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118229485",
+   "kelas": "9H"
+  },
+  {
+   "nama": "AMMAR RUZAIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119705776",
+   "kelas": "9H"
+  },
+  {
+   "nama": "ARSYA ALDI NUGROHO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0116560648",
+   "kelas": "9H"
+  },
+  {
+   "nama": "AULIA RAHMAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112146414",
+   "kelas": "9H"
+  },
+  {
+   "nama": "CHIARA QONITA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0125796474",
+   "kelas": "9H"
+  },
+  {
+   "nama": "DEJAVU VICI KILIMANJARO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0105511688",
+   "kelas": "9H"
+  },
+  {
+   "nama": "FAIREL ATARIEZZ CALIEF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0118949572",
+   "kelas": "9H"
+  },
+  {
+   "nama": "GALVIN AQIIL ZAIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121864507",
+   "kelas": "9H"
+  },
+  {
+   "nama": "GATAN PANDU PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0111378507",
+   "kelas": "9H"
+  },
+  {
+   "nama": "HUMAIRA RASHIDA GUNAWAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0118086638",
+   "kelas": "9H"
+  },
+  {
+   "nama": "IBRAHIM SYAHPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0126662655",
+   "kelas": "9H"
+  },
+  {
+   "nama": "ICHA NOVIYANTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0107708175",
+   "kelas": "9H"
+  },
+  {
+   "nama": "KAFAF FILZAH PRAYOGA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0128060158",
+   "kelas": "9H"
+  },
+  {
+   "nama": "KEYSHA BRILIANA PUTRI PRASETIYO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0121393550",
+   "kelas": "9H"
+  },
+  {
+   "nama": "LINTANG",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0119151063",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MARSYA FIRRA LAUZAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114270903",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MEGA KALISTA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0114427297",
+   "kelas": "9H"
+  },
+  {
+   "nama": "METALISA RAYSA WIDIANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0123548739",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MIRALDA BEP WILHELMINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3117841199",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MUHAMAD REGEN PUTRA WIBOWO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124642877",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MUHAMMAD JIBRIL IBNU HOLIKI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115571859",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MUHAMMAD RIZKI AFIKA PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112046867",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MUHAMMAD WIRA AQIL SYADADD",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112403764",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MUHAMMAD YASRUL HASAN NASUTION",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3110788912",
+   "kelas": "9H"
+  },
+  {
+   "nama": "MURSYIDAN BALDAN KAMIL",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119578731",
+   "kelas": "9H"
+  },
+  {
+   "nama": "NADIA OCTAVIANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116318409",
+   "kelas": "9H"
+  },
+  {
+   "nama": "NEYSHA AIDAGINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116126878",
+   "kelas": "9H"
+  },
+  {
+   "nama": "RADITYA ILHAMSYAH RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3112535982",
+   "kelas": "9H"
+  },
+  {
+   "nama": "RAEESAH SAHLA NAZEEHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0127997499",
+   "kelas": "9H"
+  },
+  {
+   "nama": "RAIZA FITRIANI AQINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122916493",
+   "kelas": "9H"
+  },
+  {
+   "nama": "REZA NAUFAL UMAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0111992150",
+   "kelas": "9H"
+  },
+  {
+   "nama": "SYAFIYAH RABIUTUL ADWIAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115513825",
+   "kelas": "9H"
+  },
+  {
+   "nama": "SYAUQISYA'BANI WAHYU",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0112785990",
+   "kelas": "9H"
+  },
+  {
+   "nama": "URAY AMIRA MALIKA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0111634959",
+   "kelas": "9H"
+  },
+  {
+   "nama": "VANIA KAMILA PUTRI SUSANTO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115962254",
+   "kelas": "9H"
+  },
+  {
+   "nama": "VIONA RAJABANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128674051",
+   "kelas": "9H"
+  },
+  {
+   "nama": "ADIYASTHA AZKA YUDHISTIRA ANDRIAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3133141425",
+   "kelas": "8A"
+  },
+  {
+   "nama": "AFIQA ZALFA APRIYANTO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3124387349",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ALDI PUTRA ILYAMSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125325020",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ALI BENZEMA BUDIARTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3123177516",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ALVIANA ADINDA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3126251367",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ANNIFAH MEALANI PRASTITI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137033938",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ANNISA NUR FEBRIYANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138121419",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ANNISA PATRIZIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3124920865",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ARYAN MUHAMMAD SAPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3111333412",
+   "kelas": "8A"
+  },
+  {
+   "nama": "BIDADARI ALIYA SYIFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0135425860",
+   "kelas": "8A"
+  },
+  {
+   "nama": "DARRELL GHIFARI PUTRA ALKOSIM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128769726",
+   "kelas": "8A"
+  },
+  {
+   "nama": "DEVAN DEWANGGA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3124262048",
+   "kelas": "8A"
+  },
+  {
+   "nama": "DZAKI SHAQUILLE IBAM PRASETYO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0123012688",
+   "kelas": "8A"
+  },
+  {
+   "nama": "FARDHAN ABDILLAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3139793222",
+   "kelas": "8A"
+  },
+  {
+   "nama": "FATHIR IZZA ALVARO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128468199",
+   "kelas": "8A"
+  },
+  {
+   "nama": "FELISHA PUTRI FIRMANSYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127781373",
+   "kelas": "8A"
+  },
+  {
+   "nama": "FULVIAN FARIS RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3124690606",
+   "kelas": "8A"
+  },
+  {
+   "nama": "HASNA HUMAIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3124356695",
+   "kelas": "8A"
+  },
+  {
+   "nama": "KAZHIM WIDANA PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3123826315",
+   "kelas": "8A"
+  },
+  {
+   "nama": "KEANDRA FAHREZA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0127883098",
+   "kelas": "8A"
+  },
+  {
+   "nama": "KHADIJAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3129536407",
+   "kelas": "8A"
+  },
+  {
+   "nama": "LOVIE ADRILA KANZA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3129956521",
+   "kelas": "8A"
+  },
+  {
+   "nama": "MUHAMAD ARI RAMADANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0125939941",
+   "kelas": "8A"
+  },
+  {
+   "nama": "MUHAMAD PARHAN SAPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125669970",
+   "kelas": "8A"
+  },
+  {
+   "nama": "NADA SYAFA ALIQA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122282167",
+   "kelas": "8A"
+  },
+  {
+   "nama": "NAFLA ALMIRA SHANUM",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123374157",
+   "kelas": "8A"
+  },
+  {
+   "nama": "NATHAN HADI PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0128992016",
+   "kelas": "8A"
+  },
+  {
+   "nama": "NICHOLAS DEVAN NATHANAEL",
+   "jk": "L",
+   "agama": "Katholik",
+   "nisn": "0127698048",
+   "kelas": "8A"
+  },
+  {
+   "nama": "RIFA JAELANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0125526707",
+   "kelas": "8A"
+  },
+  {
+   "nama": "SHAZANANI NAZIFA MARJULI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0129542163",
+   "kelas": "8A"
+  },
+  {
+   "nama": "SHELYN SRI CAHYANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128549426",
+   "kelas": "8A"
+  },
+  {
+   "nama": "STEPHANO AMADEUS ASAN GANA TOKAN*",
+   "jk": "L",
+   "agama": "Katholik",
+   "nisn": "0128903727",
+   "kelas": "8A"
+  },
+  {
+   "nama": "SYAFINA FADILLAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122170846",
+   "kelas": "8A"
+  },
+  {
+   "nama": "SYAURAH NUR SHADRINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125205236",
+   "kelas": "8A"
+  },
+  {
+   "nama": "VICKY TAQIYYAH MAYZURA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125868690",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ZERLINA MAHARANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3131228635",
+   "kelas": "8A"
+  },
+  {
+   "nama": "ADIVA FAUZIAH YUMNA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125596124",
+   "kelas": "8B"
+  },
+  {
+   "nama": "AIRA RIANTI SALSABILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3120998545",
+   "kelas": "8B"
+  },
+  {
+   "nama": "ALEXIA PUTRI RAHMADANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0128191455",
+   "kelas": "8B"
+  },
+  {
+   "nama": "ALIP SAPUTRA LUBIS",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0134783490",
+   "kelas": "8B"
+  },
+  {
+   "nama": "ALYA ADELIA IDRIS",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128662567",
+   "kelas": "8B"
+  },
+  {
+   "nama": "AMANDA RUDANG MAYANG SITEPU",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3124626994",
+   "kelas": "8B"
+  },
+  {
+   "nama": "ANGGIETA YUGI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123179149",
+   "kelas": "8B"
+  },
+  {
+   "nama": "CHAISYA DESERRO PRATIWI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126022634",
+   "kelas": "8B"
+  },
+  {
+   "nama": "DAVA ALFA RIZKI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129498664",
+   "kelas": "8B"
+  },
+  {
+   "nama": "EKA PUTRI NUR RAHMAWATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3129980405",
+   "kelas": "8B"
+  },
+  {
+   "nama": "GRISELDA RUKMA ASANKA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3126356796",
+   "kelas": "8B"
+  },
+  {
+   "nama": "HASBYA PUTRI HASYISA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128989392",
+   "kelas": "8B"
+  },
+  {
+   "nama": "KEISHA ALMEDINA MUTIARI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3126575397",
+   "kelas": "8B"
+  },
+  {
+   "nama": "KRISHNA DWI PANJI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0126656972",
+   "kelas": "8B"
+  },
+  {
+   "nama": "MUHAMAD RAFLY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128964006",
+   "kelas": "8B"
+  },
+  {
+   "nama": "MUHAMAD REIHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128803334",
+   "kelas": "8B"
+  },
+  {
+   "nama": "MUHAMMAD AL FATHIR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0121793856",
+   "kelas": "8B"
+  },
+  {
+   "nama": "MUHAMMAD ALTAF ADABY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3139533191",
+   "kelas": "8B"
+  },
+  {
+   "nama": "MUHAMMAD ALVARO WARDHANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3123487087",
+   "kelas": "8B"
+  },
+  {
+   "nama": "MUHAMMAD HILAL RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128588117",
+   "kelas": "8B"
+  },
+  {
+   "nama": "MUHAMMAD INDRA KHOIRUL ANWAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3127010725",
+   "kelas": "8B"
+  },
+  {
+   "nama": "MUHAMMAD IRSYAD FEBRIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3136825621",
+   "kelas": "8B"
+  },
+  {
+   "nama": "NABILA NURAFIFA SOFYAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122910818",
+   "kelas": "8B"
+  },
+  {
+   "nama": "NADIRA AIKA NUGROHO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126625708",
+   "kelas": "8B"
+  },
+  {
+   "nama": "NAJMA INARA BUDIARTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126884540",
+   "kelas": "8B"
+  },
+  {
+   "nama": "NAZILHAH EGI JATMIKO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128631464",
+   "kelas": "8B"
+  },
+  {
+   "nama": "RIFDA ALYA AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3139389489",
+   "kelas": "8B"
+  },
+  {
+   "nama": "SAAMIY RIZQY SYANDHANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3136940539",
+   "kelas": "8B"
+  },
+  {
+   "nama": "SAHID DWI IBRAHIM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0214486153",
+   "kelas": "8B"
+  },
+  {
+   "nama": "SIFA AULIA ZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0131202238",
+   "kelas": "8B"
+  },
+  {
+   "nama": "SRENGENGE GALE JENAR",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134793719",
+   "kelas": "8B"
+  },
+  {
+   "nama": "SUBHAN TAHIR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124242447",
+   "kelas": "8B"
+  },
+  {
+   "nama": "SUCCI RAMADANI PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125115979",
+   "kelas": "8B"
+  },
+  {
+   "nama": "ZAHRAN ALBANSA RABBANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129374789",
+   "kelas": "8B"
+  },
+  {
+   "nama": "ZAIN DWI AREZKY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125543095",
+   "kelas": "8B"
+  },
+  {
+   "nama": "ZIAN MAHESA PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3137620519",
+   "kelas": "8B"
+  },
+  {
+   "nama": "ALFIQI ABI DZAKI ALFARIZ",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129628872",
+   "kelas": "8C"
+  },
+  {
+   "nama": "ANNAYA SHAFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0121217250",
+   "kelas": "8C"
+  },
+  {
+   "nama": "ARYA EKA RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121147238",
+   "kelas": "8C"
+  },
+  {
+   "nama": "AURA PUTRIALITA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3121898767",
+   "kelas": "8C"
+  },
+  {
+   "nama": "AYESHA FIILIA ONI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3129994654",
+   "kelas": "8C"
+  },
+  {
+   "nama": "AZZAHRO ZEO SETIAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3126995396",
+   "kelas": "8C"
+  },
+  {
+   "nama": "CHIARA THALIA CAESARIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0125589536",
+   "kelas": "8C"
+  },
+  {
+   "nama": "DINKA KAYANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125645111",
+   "kelas": "8C"
+  },
+  {
+   "nama": "EVAN MAULANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128373748",
+   "kelas": "8C"
+  },
+  {
+   "nama": "FATHIR PUTRA PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121400406",
+   "kelas": "8C"
+  },
+  {
+   "nama": "GRACIA ALEXANDRA NEE",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "3123954025",
+   "kelas": "8C"
+  },
+  {
+   "nama": "HAFIDZA MULYA SANJAYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3124444455",
+   "kelas": "8C"
+  },
+  {
+   "nama": "HANA HUMAIROH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124823901",
+   "kelas": "8C"
+  },
+  {
+   "nama": "HUMAIRA SOFA MARWA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3115114997",
+   "kelas": "8C"
+  },
+  {
+   "nama": "ISMI NUR OKTAVIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128692663",
+   "kelas": "8C"
+  },
+  {
+   "nama": "JAVIER SATRIA FIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3130420191",
+   "kelas": "8C"
+  },
+  {
+   "nama": "JUNANDA SUAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122596381",
+   "kelas": "8C"
+  },
+  {
+   "nama": "KEYNU RAFID ABIYYU",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0126784837",
+   "kelas": "8C"
+  },
+  {
+   "nama": "LAETICIA BARRAH MALIHAH WAHYUDHI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134391403",
+   "kelas": "8C"
+  },
+  {
+   "nama": "LUIGI SAMUEL TOGU TAMBUNAN",
+   "jk": "L",
+   "agama": "Kristen",
+   "nisn": "3125627841",
+   "kelas": "8C"
+  },
+  {
+   "nama": "MUHAMAD FARHAN JABBAR KURNIAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3124528126",
+   "kelas": "8C"
+  },
+  {
+   "nama": "MUHAMMAD DAFFA RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3123367944",
+   "kelas": "8C"
+  },
+  {
+   "nama": "NAYRA EKA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0129852868",
+   "kelas": "8C"
+  },
+  {
+   "nama": "NIKHAYLA AURELIA RISKY",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123071771",
+   "kelas": "8C"
+  },
+  {
+   "nama": "NIRVANA QUEEN AL ZENNA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0127791332",
+   "kelas": "8C"
+  },
+  {
+   "nama": "NURUL FARISA SIREGAR",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125432696",
+   "kelas": "8C"
+  },
+  {
+   "nama": "RAKA ADITHYA NUGRAHA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3127983364",
+   "kelas": "8C"
+  },
+  {
+   "nama": "RIFKI AL LAKI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0128076578",
+   "kelas": "8C"
+  },
+  {
+   "nama": "RIZKI SURYA MANDALA PUTRA RIYADI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3124908618",
+   "kelas": "8C"
+  },
+  {
+   "nama": "SAKTI ARJUNA NURDIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128664676",
+   "kelas": "8C"
+  },
+  {
+   "nama": "SATRIA BAGUS OCTA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122615084",
+   "kelas": "8C"
+  },
+  {
+   "nama": "SYAKIRA PUTRI ZAHIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122882783",
+   "kelas": "8C"
+  },
+  {
+   "nama": "TEUKU SHIDQI LANGIT RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136321326",
+   "kelas": "8C"
+  },
+  {
+   "nama": "TIARA LARASATI WICAKSONO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3126487725",
+   "kelas": "8C"
+  },
+  {
+   "nama": "WIWIK SUGANTINI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0115805509",
+   "kelas": "8C"
+  },
+  {
+   "nama": "ZHAVIRA TRI ANISA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0131028152",
+   "kelas": "8C"
+  },
+  {
+   "nama": "AL DZEKO KHAIZUR RACHMAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129979312",
+   "kelas": "8D"
+  },
+  {
+   "nama": "ALENA AURORA SYAHPRIKO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0127537406",
+   "kelas": "8D"
+  },
+  {
+   "nama": "APRILIA MEGA AYUMIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123655579",
+   "kelas": "8D"
+  },
+  {
+   "nama": "ASHYLLA QUINAYA RAMADHINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125658412",
+   "kelas": "8D"
+  },
+  {
+   "nama": "AZMA NURILAHI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0131930099",
+   "kelas": "8D"
+  },
+  {
+   "nama": "CALISTA ABBYRA JEANICE",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "0132726736",
+   "kelas": "8D"
+  },
+  {
+   "nama": "CHARLLOTHA GISEL NATHANIA",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "0129363176",
+   "kelas": "8D"
+  },
+  {
+   "nama": "DANISH HAFIZHURRAHMAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0131598692",
+   "kelas": "8D"
+  },
+  {
+   "nama": "DIMITRIA SACHI MAHESWARI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125482200",
+   "kelas": "8D"
+  },
+  {
+   "nama": "EKASARI PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3126893606",
+   "kelas": "8D"
+  },
+  {
+   "nama": "ELVIRA OKTOFUNNISA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3121819811",
+   "kelas": "8D"
+  },
+  {
+   "nama": "FADIA CHEFIL PRICILLA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0116282653",
+   "kelas": "8D"
+  },
+  {
+   "nama": "FATHUR HARLAN MAULANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0138673349",
+   "kelas": "8D"
+  },
+  {
+   "nama": "FATIMA AZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126204152",
+   "kelas": "8D"
+  },
+  {
+   "nama": "FEBRIANA AYU AZIZAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127405246",
+   "kelas": "8D"
+  },
+  {
+   "nama": "HYUNA SAVIRA CHAIRUNNISA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122676650",
+   "kelas": "8D"
+  },
+  {
+   "nama": "JIDAN MAULANA IBRAHIM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121015288",
+   "kelas": "8D"
+  },
+  {
+   "nama": "LULU SEVERNAYA LITUHAYU",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127882442",
+   "kelas": "8D"
+  },
+  {
+   "nama": "MAHESWARA KAYANA FAIZI PUTRA DRIAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0131290075",
+   "kelas": "8D"
+  },
+  {
+   "nama": "MAULIDYA KHALISHA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125194723",
+   "kelas": "8D"
+  },
+  {
+   "nama": "MUH. ATHAYA NEVAN KHALFANI ISMAWANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0125081439",
+   "kelas": "8D"
+  },
+  {
+   "nama": "MUHAMMAD AL-FATIH KHAFFAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3132060079",
+   "kelas": "8D"
+  },
+  {
+   "nama": "MUHAMMAD HAZEM ATHALLAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122728555",
+   "kelas": "8D"
+  },
+  {
+   "nama": "MUHAMMAD JAMAIL AL GHANI HAKIM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128492480",
+   "kelas": "8D"
+  },
+  {
+   "nama": "MUHAMMAD REZKY FAHREZI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0127302520",
+   "kelas": "8D"
+  },
+  {
+   "nama": "MUHAMMAD SHOFA RIZKI ADITIYA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0115674506",
+   "kelas": "8D"
+  },
+  {
+   "nama": "NABILA SALSA BILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3139875038",
+   "kelas": "8D"
+  },
+  {
+   "nama": "NEVADA ARDIANO DWI KURNIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3116443277",
+   "kelas": "8D"
+  },
+  {
+   "nama": "QUINN LOVE MIKAELA SIREGAR",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0123309273",
+   "kelas": "8D"
+  },
+  {
+   "nama": "RAMADHAN AKBAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3124240215",
+   "kelas": "8D"
+  },
+  {
+   "nama": "RASYDAN MUHHAMAD AL FATIH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0117000614",
+   "kelas": "8D"
+  },
+  {
+   "nama": "RASYID DWI PRADANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0131803799",
+   "kelas": "8D"
+  },
+  {
+   "nama": "SYAFIRA AWALIYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3124218929",
+   "kelas": "8D"
+  },
+  {
+   "nama": "SYALWA FITRIAH AZHARI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0123268402",
+   "kelas": "8D"
+  },
+  {
+   "nama": "TAZKIA MANZILA ARFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132081506",
+   "kelas": "8D"
+  },
+  {
+   "nama": "ZHAFRAN SATRIO PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125948612",
+   "kelas": "8D"
+  },
+  {
+   "nama": "AIRLANGGA AZKA KURNIAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0123806703",
+   "kelas": "8E"
+  },
+  {
+   "nama": "ALLIYA PUTRI RAMADHANTY",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0127738842",
+   "kelas": "8E"
+  },
+  {
+   "nama": "ANGGI SAPUTRA LUMBAN TUNGKUP",
+   "jk": "L",
+   "agama": "Kristen",
+   "nisn": "3111904102",
+   "kelas": "8E"
+  },
+  {
+   "nama": "ARYA JAKA SAMUDRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129311220",
+   "kelas": "8E"
+  },
+  {
+   "nama": "ASYAFA ZAHRANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132907787",
+   "kelas": "8E"
+  },
+  {
+   "nama": "ASYIFA RAMADHANI LATIF",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127697488",
+   "kelas": "8E"
+  },
+  {
+   "nama": "ASYILLA SYAFANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0121288433",
+   "kelas": "8E"
+  },
+  {
+   "nama": "BAYU PRATAMA HERYANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3117249010",
+   "kelas": "8E"
+  },
+  {
+   "nama": "DICKY RIZALDY *",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3119653563",
+   "kelas": "8E"
+  },
+  {
+   "nama": "EZA YUSUF IRVAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0138738048",
+   "kelas": "8E"
+  },
+  {
+   "nama": "FACHRI ZAHRAN ANNAJAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0126304171",
+   "kelas": "8E"
+  },
+  {
+   "nama": "FAHDLAN RAMADAN YASMIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3126864925",
+   "kelas": "8E"
+  },
+  {
+   "nama": "FARREL ALVINO PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3119078911",
+   "kelas": "8E"
+  },
+  {
+   "nama": "GANGGA PUTRA SULAIMAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0125090224",
+   "kelas": "8E"
+  },
+  {
+   "nama": "HABIBAH NASYWA DZAKIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125992323",
+   "kelas": "8E"
+  },
+  {
+   "nama": "IKHWAN ADLIE RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3127589372",
+   "kelas": "8E"
+  },
+  {
+   "nama": "INTAN MUTIARA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0133517259",
+   "kelas": "8E"
+  },
+  {
+   "nama": "KANIA FAIZIA ZAHDI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124501964",
+   "kelas": "8E"
+  },
+  {
+   "nama": "LIRA AULIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128367960",
+   "kelas": "8E"
+  },
+  {
+   "nama": "MAURA AZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127717230",
+   "kelas": "8E"
+  },
+  {
+   "nama": "MIKA OMAR SAHARI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135332830",
+   "kelas": "8E"
+  },
+  {
+   "nama": "MOHAMAD RAFIANDRA SAPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125381689",
+   "kelas": "8E"
+  },
+  {
+   "nama": "MUHAMAD FAHRIL AFRIZAL",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3127034691",
+   "kelas": "8E"
+  },
+  {
+   "nama": "NADHIRA SYIFA AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0138354972",
+   "kelas": "8E"
+  },
+  {
+   "nama": "NAFISYA PUTRI RAMADHANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3121816559",
+   "kelas": "8E"
+  },
+  {
+   "nama": "NAYLA ALICHIA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3114157821",
+   "kelas": "8E"
+  },
+  {
+   "nama": "NURIDHA ATTAMIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126863673",
+   "kelas": "8E"
+  },
+  {
+   "nama": "PUTRI HUMAIROH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3131982921",
+   "kelas": "8E"
+  },
+  {
+   "nama": "QALESHA ARASHEL HUMAIRA CROSSANDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123829148",
+   "kelas": "8E"
+  },
+  {
+   "nama": "RAIHAN RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0119626622",
+   "kelas": "8E"
+  },
+  {
+   "nama": "RIZQI ROMADHON MULYADI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0127174713",
+   "kelas": "8E"
+  },
+  {
+   "nama": "RUBY MAYSILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0129143383",
+   "kelas": "8E"
+  },
+  {
+   "nama": "WAHYU AMANDA RIFKIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0129454780",
+   "kelas": "8E"
+  },
+  {
+   "nama": "WAHYU IKHSANUL FACHRI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3111275077",
+   "kelas": "8E"
+  },
+  {
+   "nama": "WIDYA MARITZA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3129676485",
+   "kelas": "8E"
+  },
+  {
+   "nama": "YULIDA SAFITRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3126104346",
+   "kelas": "8E"
+  },
+  {
+   "nama": "ABIMANYU HAJIME AGNIBRATA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3124344516",
+   "kelas": "8F"
+  },
+  {
+   "nama": "ACH AZKA AQIL MUBAROK",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121057679",
+   "kelas": "8F"
+  },
+  {
+   "nama": "ALYA ASMIATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128027783",
+   "kelas": "8F"
+  },
+  {
+   "nama": "AMEERA AULIA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0121495329",
+   "kelas": "8F"
+  },
+  {
+   "nama": "ANDIKA DWI SAPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121204284",
+   "kelas": "8F"
+  },
+  {
+   "nama": "AYU ALYSSA RARAS",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127664513",
+   "kelas": "8F"
+  },
+  {
+   "nama": "CANTIKA PUTRI QUINSYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125016075",
+   "kelas": "8F"
+  },
+  {
+   "nama": "DASTA AFLAH WAHAB",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128116779",
+   "kelas": "8F"
+  },
+  {
+   "nama": "DEVAN AKMAL AREZKY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0132156082",
+   "kelas": "8F"
+  },
+  {
+   "nama": "FAIQAH YERA AATHIFAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0128572279",
+   "kelas": "8F"
+  },
+  {
+   "nama": "FAYZA SACHRIS IBRAHIM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0134055228",
+   "kelas": "8F"
+  },
+  {
+   "nama": "GENDIS ARIANA PUTERI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122620782",
+   "kelas": "8F"
+  },
+  {
+   "nama": "GHANY SYARIF RABBANI GUMELAR PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125465718",
+   "kelas": "8F"
+  },
+  {
+   "nama": "HANIA AMMARA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122716617",
+   "kelas": "8F"
+  },
+  {
+   "nama": "HAYKAL NUR SYAHBAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0126028825",
+   "kelas": "8F"
+  },
+  {
+   "nama": "KHOLIFAH AZIZAH ALIYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125649944",
+   "kelas": "8F"
+  },
+  {
+   "nama": "MARCCELLA AULIA YASMIN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122694842",
+   "kelas": "8F"
+  },
+  {
+   "nama": "MOHAMAD GILANG FAIRUS",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125476576",
+   "kelas": "8F"
+  },
+  {
+   "nama": "MOZAIQ KANDRA YESILLIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125748143",
+   "kelas": "8F"
+  },
+  {
+   "nama": "MUHAMMAD ALTAF AL AZZAM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3113636297",
+   "kelas": "8F"
+  },
+  {
+   "nama": "MUHAMMAD FATHIR RIZKI *",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3137727383",
+   "kelas": "8F"
+  },
+  {
+   "nama": "MUHAMMAD RAFI HABIBI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129508293",
+   "kelas": "8F"
+  },
+  {
+   "nama": "NABILA AISAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3133758153",
+   "kelas": "8F"
+  },
+  {
+   "nama": "NAJWA SYIFAULQOLBI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125614068",
+   "kelas": "8F"
+  },
+  {
+   "nama": "NAUFAL FAJAR MAULANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3126404538",
+   "kelas": "8F"
+  },
+  {
+   "nama": "NAZWA FAZITA MAHARANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3121928444",
+   "kelas": "8F"
+  },
+  {
+   "nama": "OZIEL AL-FARIZY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121961626",
+   "kelas": "8F"
+  },
+  {
+   "nama": "PRABU HAFIDZ NURYANDI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121522101",
+   "kelas": "8F"
+  },
+  {
+   "nama": "RADZAN MUHAMMAD ICHSAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3119339236",
+   "kelas": "8F"
+  },
+  {
+   "nama": "RANISYA ALYA ALIFIANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124539079",
+   "kelas": "8F"
+  },
+  {
+   "nama": "RARA AISYAR MAHARANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3126557812",
+   "kelas": "8F"
+  },
+  {
+   "nama": "SALWA NADIFFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122933785",
+   "kelas": "8F"
+  },
+  {
+   "nama": "SASKIA AZZAHRA SALSABILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127190312",
+   "kelas": "8F"
+  },
+  {
+   "nama": "SYAIFUL HADZIQ AFIF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122584894",
+   "kelas": "8F"
+  },
+  {
+   "nama": "WISNU ADI PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121336003",
+   "kelas": "8F"
+  },
+  {
+   "nama": "ZAVIER EVANO SASMITO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135391406",
+   "kelas": "8F"
+  },
+  {
+   "nama": "ABDUL JABBAR MUAZZAM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122962504",
+   "kelas": "8G"
+  },
+  {
+   "nama": "AISYAH NUR HIKMAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3129268706",
+   "kelas": "8G"
+  },
+  {
+   "nama": "AISYIFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0117312101",
+   "kelas": "8G"
+  },
+  {
+   "nama": "ALISA MAHINA ESME",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137025213",
+   "kelas": "8G"
+  },
+  {
+   "nama": "AQILA FEBRIANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0139163534",
+   "kelas": "8G"
+  },
+  {
+   "nama": "ARKHAN EL SHAARAWY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3133237865",
+   "kelas": "8G"
+  },
+  {
+   "nama": "BELLA AFIYA AZFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128577081",
+   "kelas": "8G"
+  },
+  {
+   "nama": "CLAUDYA SYAHLA ANDRIA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127458899",
+   "kelas": "8G"
+  },
+  {
+   "nama": "DWI NUR AZIZAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127536095",
+   "kelas": "8G"
+  },
+  {
+   "nama": "DZAKIYYA RAMADINA PUTRI ALAMSYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135390414",
+   "kelas": "8G"
+  },
+  {
+   "nama": "EL SYAHDAN HIDAYATULLOH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121468191",
+   "kelas": "8G"
+  },
+  {
+   "nama": "GIOVANNI SETIAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0121284335",
+   "kelas": "8G"
+  },
+  {
+   "nama": "JULIANA TIFANI DIMARSYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123143869",
+   "kelas": "8G"
+  },
+  {
+   "nama": "JULIO RIZKY RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122238377",
+   "kelas": "8G"
+  },
+  {
+   "nama": "KUSUMA ATMAJA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0125406596",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MELODY ALLANA PRESSYNTA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125447758",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MERZA ELQANTARAFAUZI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3121246192",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MILANO BAGASKARA HARIYANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3136900660",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MUHAMAD ALIEF OMAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122249335",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MUHAMMAD AFRILIYAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3136215581",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MUHAMMAD AZZAM WINATA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129922343",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MUHAMMAD HERDIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3127890626",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MUHAMMAD RAIHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128600023",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MUHAMMAD RIZKY AGUNG PERDANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3138163315",
+   "kelas": "8G"
+  },
+  {
+   "nama": "MUHAMMAD ZAIDAN ATHALLAH FARIED",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3137483197",
+   "kelas": "8G"
+  },
+  {
+   "nama": "NADIAZ SAFARAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126040436",
+   "kelas": "8G"
+  },
+  {
+   "nama": "NAFTALI SYAHQUITTA PURNOMO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0125814838",
+   "kelas": "8G"
+  },
+  {
+   "nama": "NASYA AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3126587496",
+   "kelas": "8G"
+  },
+  {
+   "nama": "RAFA ALIFIANDRA LESMANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3132210682",
+   "kelas": "8G"
+  },
+  {
+   "nama": "RASYIKA DIHYA SEFYAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0131730384",
+   "kelas": "8G"
+  },
+  {
+   "nama": "RIO FIRMANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122696380",
+   "kelas": "8G"
+  },
+  {
+   "nama": "SEFTINA ADINA PRIHATIN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3129939838",
+   "kelas": "8G"
+  },
+  {
+   "nama": "SITI MUFIDAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3129955318",
+   "kelas": "8G"
+  },
+  {
+   "nama": "SYAFWAN RIFFAI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0139879389",
+   "kelas": "8G"
+  },
+  {
+   "nama": "SYIFA AZZACHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134063491",
+   "kelas": "8G"
+  },
+  {
+   "nama": "TALEA EILIYAH ARIOPUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128904257",
+   "kelas": "8G"
+  },
+  {
+   "nama": "ABBIE RAKHA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3127214431",
+   "kelas": "8H"
+  },
+  {
+   "nama": "AFIA URFA RAMADHANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0127121955",
+   "kelas": "8H"
+  },
+  {
+   "nama": "AHMAD AUFA REVANO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128564723",
+   "kelas": "8H"
+  },
+  {
+   "nama": "AISYAH AMALIA WINDY",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122235962",
+   "kelas": "8H"
+  },
+  {
+   "nama": "ALKHALIFI ZIKRI HADY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136201834",
+   "kelas": "8H"
+  },
+  {
+   "nama": "AVINO JULIAN NARLES",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129269812",
+   "kelas": "8H"
+  },
+  {
+   "nama": "DHAIFA ABILEAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3119900611",
+   "kelas": "8H"
+  },
+  {
+   "nama": "FERISHA ANINDYA KIRANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3125921779",
+   "kelas": "8H"
+  },
+  {
+   "nama": "FIKRI ADRIAN ZHAFIR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124043705",
+   "kelas": "8H"
+  },
+  {
+   "nama": "HAFIZHAN ALMAN HAKIM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125182393",
+   "kelas": "8H"
+  },
+  {
+   "nama": "KHALIFA ARSYANDA LUBIS",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0129475043",
+   "kelas": "8H"
+  },
+  {
+   "nama": "LADY KIRANA AURORA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0124140646",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MEILI AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128776392",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MELODY ELYSIA ZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123227083",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MEYLINDA PUTRI WIBOWO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3139102467",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MIKHAYLA AINUN RESTA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3121023411",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MUHAMAD AJI BASTIAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122535722",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MUHAMAD AZAM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3123794821",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MUHAMMAD ABDUL GHOFUR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3126960489",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MUHAMMAD ALFANDI AZAMI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3128954931",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MUHAMMAD FADILAH ARZETI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0129887482",
+   "kelas": "8H"
+  },
+  {
+   "nama": "MUHAMMAD RAQIL PERDANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0128564012",
+   "kelas": "8H"
+  },
+  {
+   "nama": "NAFISAH MAWADAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135029913",
+   "kelas": "8H"
+  },
+  {
+   "nama": "NIZAM YUDHA SAPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0125975499",
+   "kelas": "8H"
+  },
+  {
+   "nama": "QURROTA KHUMAIROH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138042941",
+   "kelas": "8H"
+  },
+  {
+   "nama": "RADINA AULIA CHANTA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122995458",
+   "kelas": "8H"
+  },
+  {
+   "nama": "RAISYA IVANA ZUHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122530454",
+   "kelas": "8H"
+  },
+  {
+   "nama": "RIKHADATUL AISY SUSWOYO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0122253104",
+   "kelas": "8H"
+  },
+  {
+   "nama": "SABRINA MAULIDA SALSABILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0131727224",
+   "kelas": "8H"
+  },
+  {
+   "nama": "SAKINAH RUSDIYANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134829483",
+   "kelas": "8H"
+  },
+  {
+   "nama": "SALSABILLAH HANIFAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127326660",
+   "kelas": "8H"
+  },
+  {
+   "nama": "SYANDANA BILLAH MAHESWARA YUDIONO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3124656350",
+   "kelas": "8H"
+  },
+  {
+   "nama": "TEO RAKA ADIGANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134343217",
+   "kelas": "8H"
+  },
+  {
+   "nama": "WIYAN ARRAFI RHAZES",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0123656592",
+   "kelas": "8H"
+  },
+  {
+   "nama": "ZASKIA DWI ADINDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123793520",
+   "kelas": "8H"
+  },
+  {
+   "nama": "AFIFAH ZAHIDAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3141911111",
+   "kelas": "7A"
+  },
+  {
+   "nama": "AHLAN HANDANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0134758884",
+   "kelas": "7A"
+  },
+  {
+   "nama": "AVARA CITTA KENCANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0134798018",
+   "kelas": "7A"
+  },
+  {
+   "nama": "AZQIAH ZAHIRA SOFYAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0135262750",
+   "kelas": "7A"
+  },
+  {
+   "nama": "CAECILIA JOVITA KYERA ANDRIYANI",
+   "jk": "P",
+   "agama": "Katholik",
+   "nisn": "3122984241",
+   "kelas": "7A"
+  },
+  {
+   "nama": "DIAS CHEZIA RANI WERAT",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3107175830",
+   "kelas": "7A"
+  },
+  {
+   "nama": "DIRA PUTRY ANGGITA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3131998764",
+   "kelas": "7A"
+  },
+  {
+   "nama": "FATIMAH AZ ZAHRA PUTRI TANTU",
+   "jk": "P",
+   "agama": "Katholik",
+   "nisn": "3121656280",
+   "kelas": "7A"
+  },
+  {
+   "nama": "FIRAZ NAZRIL HARYANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3133640069",
+   "kelas": "7A"
+  },
+  {
+   "nama": "GHATHFAAN AUFAA AL BAIHAQII",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134544228",
+   "kelas": "7A"
+  },
+  {
+   "nama": "GLENDA ISTIAZAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134680282",
+   "kelas": "7A"
+  },
+  {
+   "nama": "JUNIFA ANINDYA ASQHI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0135416618",
+   "kelas": "7A"
+  },
+  {
+   "nama": "KEENAN EFENDY WIJOYO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0135758408",
+   "kelas": "7A"
+  },
+  {
+   "nama": "KHANSA ASTREILA NAZIFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3148006919",
+   "kelas": "7A"
+  },
+  {
+   "nama": "LAQUEENA ZYVANYA BAHASORA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0132609417",
+   "kelas": "7A"
+  },
+  {
+   "nama": "MOZA BRAHMA PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0135064425",
+   "kelas": "7A"
+  },
+  {
+   "nama": "MUHAMMAD ALVARO PUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0132164011",
+   "kelas": "7A"
+  },
+  {
+   "nama": "MUHAMMAD BILAL MIRZA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3137611475",
+   "kelas": "7A"
+  },
+  {
+   "nama": "MUHAMMAD FACHRIE ANDERESTU FERIADY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3139327295",
+   "kelas": "7A"
+  },
+  {
+   "nama": "MUHAMMAD HASBY RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0148419805",
+   "kelas": "7A"
+  },
+  {
+   "nama": "MUHAMMAD NAZIF QOLBI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3139893675",
+   "kelas": "7A"
+  },
+  {
+   "nama": "MUHAMMAD RAYHAN MORENO NANDA DHARMAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134673837",
+   "kelas": "7A"
+  },
+  {
+   "nama": "MUHAMMAD ZAKI MIRZA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3138360625",
+   "kelas": "7A"
+  },
+  {
+   "nama": "NAFISA GIFI AZAHWA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0135399830",
+   "kelas": "7A"
+  },
+  {
+   "nama": "NAJILLA AIRA FATIMAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135951273",
+   "kelas": "7A"
+  },
+  {
+   "nama": "NAUFAL MAULANA ALTHAF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3139997122",
+   "kelas": "7A"
+  },
+  {
+   "nama": "NAURA AZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136429821",
+   "kelas": "7A"
+  },
+  {
+   "nama": "NICO EL SHAARAWY ARAFAT",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0131758528",
+   "kelas": "7A"
+  },
+  {
+   "nama": "NURAMELIA SYAKILLA HAPSARI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3142365386",
+   "kelas": "7A"
+  },
+  {
+   "nama": "RADITYA ANGGA RAKSA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136716177",
+   "kelas": "7A"
+  },
+  {
+   "nama": "RAHMAD FAUZAN AZHIMA*",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0129902371",
+   "kelas": "7A"
+  },
+  {
+   "nama": "REISYA PUTRI AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0135093825",
+   "kelas": "7A"
+  },
+  {
+   "nama": "ROYYAN MUHAMMAD SYAWQILLAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3131669462",
+   "kelas": "7A"
+  },
+  {
+   "nama": "SAFIRA SYIFA AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0131870362",
+   "kelas": "7A"
+  },
+  {
+   "nama": "SAYYIDATU HAIBA QIDZAMA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3142934338",
+   "kelas": "7A"
+  },
+  {
+   "nama": "ZULAYKHA SYIFA SALSABILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0139748787",
+   "kelas": "7A"
+  },
+  {
+   "nama": "ACHMAD MAULANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0138506505",
+   "kelas": "7B"
+  },
+  {
+   "nama": "ADELIA CAHYA KUSNAENI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0141090886",
+   "kelas": "7B"
+  },
+  {
+   "nama": "AKHMAD FAHREZI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3133996106",
+   "kelas": "7B"
+  },
+  {
+   "nama": "AL ZHIDHAN RIZQI PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3137705818",
+   "kelas": "7B"
+  },
+  {
+   "nama": "ALEXANDRIA TALITHA OLIVIA ANGGRAENI",
+   "jk": "P",
+   "agama": "Katholik",
+   "nisn": "3144496346",
+   "kelas": "7B"
+  },
+  {
+   "nama": "AQILAH RAYYA NAFISAH ABDULLAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136865717",
+   "kelas": "7B"
+  },
+  {
+   "nama": "AQILLA KHANZA AZAHRO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0143502697",
+   "kelas": "7B"
+  },
+  {
+   "nama": "ARSLAN SIGIT SETIAWAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3130981777",
+   "kelas": "7B"
+  },
+  {
+   "nama": "AULIA MAULISYAH PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138174659",
+   "kelas": "7B"
+  },
+  {
+   "nama": "DARA ASTREILA WIDYA SASTRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3130597353",
+   "kelas": "7B"
+  },
+  {
+   "nama": "FABIAN RHASYIDAN DARREL",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3140690052",
+   "kelas": "7B"
+  },
+  {
+   "nama": "FIRDAUS WAHYU TRIYANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0121964518",
+   "kelas": "7B"
+  },
+  {
+   "nama": "FRICILLYA FUNNY GINTING",
+   "jk": "P",
+   "agama": "Katholik",
+   "nisn": "3148402181",
+   "kelas": "7B"
+  },
+  {
+   "nama": "IBNU ABBAS",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0138141330",
+   "kelas": "7B"
+  },
+  {
+   "nama": "JAUZA AULIA RAMADHANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3133385304",
+   "kelas": "7B"
+  },
+  {
+   "nama": "JOSUA SATRIA PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0145606311",
+   "kelas": "7B"
+  },
+  {
+   "nama": "LIV MEDDINA AINI YULHAIDIR",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0138365787",
+   "kelas": "7B"
+  },
+  {
+   "nama": "LIVIA PUTRI WARDOYO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0134785146",
+   "kelas": "7B"
+  },
+  {
+   "nama": "M. ARTA WANANDIKA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134081289",
+   "kelas": "7B"
+  },
+  {
+   "nama": "MERYL AMANDA LUBIS",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138842444",
+   "kelas": "7B"
+  },
+  {
+   "nama": "MUHAMMAD AZFAR SAGESUKE",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0137772132",
+   "kelas": "7B"
+  },
+  {
+   "nama": "MUHAMMAD FAREZ BENZEMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0133210902",
+   "kelas": "7B"
+  },
+  {
+   "nama": "MUHAMMAD KAMIL ZAIDAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3137532827",
+   "kelas": "7B"
+  },
+  {
+   "nama": "MUHAMMAD RIZKY ADITYA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3131302164",
+   "kelas": "7B"
+  },
+  {
+   "nama": "PURI MAYLANE NUR SAMSIYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0137536414",
+   "kelas": "7B"
+  },
+  {
+   "nama": "RAISYA KARIM",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0139728197",
+   "kelas": "7B"
+  },
+  {
+   "nama": "RESYA AMANDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135470556",
+   "kelas": "7B"
+  },
+  {
+   "nama": "SEAN CONERY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0135350338",
+   "kelas": "7B"
+  },
+  {
+   "nama": "SITI ALFIYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134453512",
+   "kelas": "7B"
+  },
+  {
+   "nama": "SULTAN MUHAMAD MUSTOFA*",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3131749233",
+   "kelas": "7B"
+  },
+  {
+   "nama": "WIDIA NURHASANAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3136379219",
+   "kelas": "7B"
+  },
+  {
+   "nama": "YASMINE AURA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0149412786",
+   "kelas": "7B"
+  },
+  {
+   "nama": "YOGA ADITYA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3132223438",
+   "kelas": "7B"
+  },
+  {
+   "nama": "ZENAL ABIDIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3133237281",
+   "kelas": "7B"
+  },
+  {
+   "nama": "ZIHAN ALGIVANIA VAMORE HIDAYAT",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0121822592",
+   "kelas": "7B"
+  },
+  {
+   "nama": "ADAM KARUNIA RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3129143896",
+   "kelas": "7C"
+  },
+  {
+   "nama": "AINUN MAHYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3139663741",
+   "kelas": "7C"
+  },
+  {
+   "nama": "ALMAIRA AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3130776818",
+   "kelas": "7C"
+  },
+  {
+   "nama": "ALNIDA KHEREN SUWANDA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3131081251",
+   "kelas": "7C"
+  },
+  {
+   "nama": "ALVIRA MAULITA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135746167",
+   "kelas": "7C"
+  },
+  {
+   "nama": "ATHAYA SHEINAFIA HUMAIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138284633",
+   "kelas": "7C"
+  },
+  {
+   "nama": "CIKAL IBNU HERLANI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3138483755",
+   "kelas": "7C"
+  },
+  {
+   "nama": "DINDA NUR HAFIZAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0138722059",
+   "kelas": "7C"
+  },
+  {
+   "nama": "DIVA ISYA MYEASHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3140065009",
+   "kelas": "7C"
+  },
+  {
+   "nama": "ELANG KENZO SANTOSO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3131257472",
+   "kelas": "7C"
+  },
+  {
+   "nama": "FACHRI ARDIANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0139261912",
+   "kelas": "7C"
+  },
+  {
+   "nama": "FAEYZA AQEELA IRFANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136948836",
+   "kelas": "7C"
+  },
+  {
+   "nama": "FEBRIANA NUR AZIZAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3131520319",
+   "kelas": "7C"
+  },
+  {
+   "nama": "HAFIZ REYHAZ ZILBRAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3136665401",
+   "kelas": "7C"
+  },
+  {
+   "nama": "HELENA CHINTYA TAMBA",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "0144228335",
+   "kelas": "7C"
+  },
+  {
+   "nama": "HELMIYA TUSOLEHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0133422485",
+   "kelas": "7C"
+  },
+  {
+   "nama": "JIHAN TALITA OKTAVIA SHAKHIB",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3136017772",
+   "kelas": "7C"
+  },
+  {
+   "nama": "JOSIA CIKAS ANANDA MARBUN",
+   "jk": "L",
+   "agama": "Kristen",
+   "nisn": "3137861900",
+   "kelas": "7C"
+  },
+  {
+   "nama": "KAKA ANGELLITA TALITHA ZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132258806",
+   "kelas": "7C"
+  },
+  {
+   "nama": "KHOERUNISA MAHARANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0149493008",
+   "kelas": "7C"
+  },
+  {
+   "nama": "LUTFI MAULANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3140725899",
+   "kelas": "7C"
+  },
+  {
+   "nama": "MAULANA MALIK IBRAHIM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136631385",
+   "kelas": "7C"
+  },
+  {
+   "nama": "MUHAMMAD FADHLAN AL QAIRAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3140797947",
+   "kelas": "7C"
+  },
+  {
+   "nama": "MUHAMMAD HAIKAL AKBAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134817373",
+   "kelas": "7C"
+  },
+  {
+   "nama": "MUHAMMAD KENZU",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0134784509",
+   "kelas": "7C"
+  },
+  {
+   "nama": "MUHAMMAD RAFA JUNAIDIPUTRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3147257896",
+   "kelas": "7C"
+  },
+  {
+   "nama": "MUHAMMAD RAZKA*",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0133115421",
+   "kelas": "7C"
+  },
+  {
+   "nama": "NURLAILI HANIFA MAYELI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136426037",
+   "kelas": "7C"
+  },
+  {
+   "nama": "NURSA'ADAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127750759",
+   "kelas": "7C"
+  },
+  {
+   "nama": "RAFIF ROYYAN NUGROHO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135126845",
+   "kelas": "7C"
+  },
+  {
+   "nama": "RAIF ANAQIE EL-FATHIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134143493",
+   "kelas": "7C"
+  },
+  {
+   "nama": "RAIHANA YASMINA ARNANTO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136565695",
+   "kelas": "7C"
+  },
+  {
+   "nama": "RUTH CHIEERYL YOSEFIN",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "3135500553",
+   "kelas": "7C"
+  },
+  {
+   "nama": "SYAHRI KIKI HANDIKA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3132118204",
+   "kelas": "7C"
+  },
+  {
+   "nama": "SYIFA AVIANTI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3136383007",
+   "kelas": "7C"
+  },
+  {
+   "nama": "ZAKI IBNU KHANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0137020240",
+   "kelas": "7C"
+  },
+  {
+   "nama": "ABDUL LATIF RASYID",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134582379",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ABYAN NEYMAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3138407399",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ABYAN RIZQI RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135642939",
+   "kelas": "7D"
+  },
+  {
+   "nama": "AGHNI NUR LAYYINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132796967",
+   "kelas": "7D"
+  },
+  {
+   "nama": "AIRA KHANZA SABIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3141419246",
+   "kelas": "7D"
+  },
+  {
+   "nama": "AKBAR NURDAFFA PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0139898459",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ALENA FAUZIA RAHMA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3127315883",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ALFARO ERLANGGA HARAHAP",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3132980916",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ALIF RIZKY NUGROHO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0147961192",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ALYA KHARISMA RAHMAWATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136724216",
+   "kelas": "7D"
+  },
+  {
+   "nama": "APRILLIA KHAERANI AL-JUFRIE",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135609797",
+   "kelas": "7D"
+  },
+  {
+   "nama": "AQILA TIARA KHOIRUNISA KAFILANO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135256996",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ARDYANTO SEBASTIAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136612910",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ATHIFAH AHNAF DWI NABILLA*",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3114819011",
+   "kelas": "7D"
+  },
+  {
+   "nama": "AZZAHRA HUMAIRAH AZQIA RACHMAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0142303355",
+   "kelas": "7D"
+  },
+  {
+   "nama": "BAGAS BSARADITYA RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136835798",
+   "kelas": "7D"
+  },
+  {
+   "nama": "DHIAFAH ANNISA PUTRI VARDIANSYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134685298",
+   "kelas": "7D"
+  },
+  {
+   "nama": "DIKA PRATAMA HENDARTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135595126",
+   "kelas": "7D"
+  },
+  {
+   "nama": "FATIR ALVARO FABIAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3125282952",
+   "kelas": "7D"
+  },
+  {
+   "nama": "FATIR MUHAMMAD PUTRA PRATAMA MARDIAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3122480677",
+   "kelas": "7D"
+  },
+  {
+   "nama": "GENDIS KHALILAH PURNAWAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137385725",
+   "kelas": "7D"
+  },
+  {
+   "nama": "KHALIL IMAM SANDI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0139917927",
+   "kelas": "7D"
+  },
+  {
+   "nama": "MUHAMAD RAIHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3138965566",
+   "kelas": "7D"
+  },
+  {
+   "nama": "MUHAMAD YIUSUF ARDABILI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0135126495",
+   "kelas": "7D"
+  },
+  {
+   "nama": "MUHAMMAD KHAIRUL FAJRIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0149546432",
+   "kelas": "7D"
+  },
+  {
+   "nama": "NAFISAH ADZRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0137728667",
+   "kelas": "7D"
+  },
+  {
+   "nama": "NAIFA KINARIAN ERDI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0137493557",
+   "kelas": "7D"
+  },
+  {
+   "nama": "NATHANIA CALYA BAIZA MAHDY",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137989271",
+   "kelas": "7D"
+  },
+  {
+   "nama": "NAUFAL ANTA ZAHRAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3136907152",
+   "kelas": "7D"
+  },
+  {
+   "nama": "NAYLA PUTRI HARAHAP",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135508379",
+   "kelas": "7D"
+  },
+  {
+   "nama": "PRADIPTA FAHRIZALHAM UWAIYS",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3133745827",
+   "kelas": "7D"
+  },
+  {
+   "nama": "PUTRI APRILIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134215041",
+   "kelas": "7D"
+  },
+  {
+   "nama": "TARA GATRUN NADA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138323729",
+   "kelas": "7D"
+  },
+  {
+   "nama": "TIARA FADILLAH PUTRI RUHYATI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0133462479",
+   "kelas": "7D"
+  },
+  {
+   "nama": "ACHMAD CAESAR RAFFIANDRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3132328376",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ADINATA DHARMA KUSUMAWANGSA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0135814538",
+   "kelas": "7E"
+  },
+  {
+   "nama": "AISHA KHAIRA LUBNA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137476981",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ALDAKA SYAFIQ NUGROHO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3146957538",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ALIYAH SEPTIANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135582960",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ALTALOZA KARAISSA YUDISTIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137727809",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ANANDA HANAN KHALAFI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136922176",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ANASTASYA DWINOV FIJRIANTY",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136644273",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ANNABELLE MICHELLA DEWANTO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134220979",
+   "kelas": "7E"
+  },
+  {
+   "nama": "AQILA PUTRI MEIDINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138537675",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ASSYIFA KHANZA AQILAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0141330684",
+   "kelas": "7E"
+  },
+  {
+   "nama": "AYESHA HAFIZHA RAHMADINA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137721249",
+   "kelas": "7E"
+  },
+  {
+   "nama": "AZKA AZMI RAMADHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3130346396",
+   "kelas": "7E"
+  },
+  {
+   "nama": "BARI SYABAN ALI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124797903",
+   "kelas": "7E"
+  },
+  {
+   "nama": "CELINE CALLYSTA NATHANIA LALUJAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3148176522",
+   "kelas": "7E"
+  },
+  {
+   "nama": "CINTA IFTINA SALMABILLA",
+   "jk": "P",
+   "agama": "Kristen",
+   "nisn": "3123461183",
+   "kelas": "7E"
+  },
+  {
+   "nama": "FABIAN PUTRA SARJANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135131383",
+   "kelas": "7E"
+  },
+  {
+   "nama": "FADISSA JANELLYTA MELODY ALANDY*",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3136498285",
+   "kelas": "7E"
+  },
+  {
+   "nama": "FAIZ ABDILLAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134384367",
+   "kelas": "7E"
+  },
+  {
+   "nama": "FITRAH DZHUHRI NURSALAM HERINDRA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134827145",
+   "kelas": "7E"
+  },
+  {
+   "nama": "HAIKAL AZKA FIRMANSYAH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3138796675",
+   "kelas": "7E"
+  },
+  {
+   "nama": "KIRANA ANINDITA SALSABILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3130869240",
+   "kelas": "7E"
+  },
+  {
+   "nama": "LIONEL RASYA AL-RAJAB",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134935724",
+   "kelas": "7E"
+  },
+  {
+   "nama": "MAHESH TRISULA DAMAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0129362591",
+   "kelas": "7E"
+  },
+  {
+   "nama": "MUHAMMAD BAGAS WIRA PRANATA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0134636996",
+   "kelas": "7E"
+  },
+  {
+   "nama": "MUHAMMAD SOLEH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3124177847",
+   "kelas": "7E"
+  },
+  {
+   "nama": "NADINE BURHAN SYAHPUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136319342",
+   "kelas": "7E"
+  },
+  {
+   "nama": "NATA AZKIYA NAMORA HASIBUAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3145335733",
+   "kelas": "7E"
+  },
+  {
+   "nama": "RAISA ALLYA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3131014351",
+   "kelas": "7E"
+  },
+  {
+   "nama": "RAMADHANI RIZQI SATORI PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3118178970",
+   "kelas": "7E"
+  },
+  {
+   "nama": "RIZKA AULIA RAHMAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136395108",
+   "kelas": "7E"
+  },
+  {
+   "nama": "SALMA LIMA RAMADHANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0134800285",
+   "kelas": "7E"
+  },
+  {
+   "nama": "SARRAH LEAN HADJU",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0142537634",
+   "kelas": "7E"
+  },
+  {
+   "nama": "SINTIA PUTRI AGUSTIN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3133987128",
+   "kelas": "7E"
+  },
+  {
+   "nama": "SYAKILA AZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135234454",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ZAHWA NURUL HUWAIDAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138550921",
+   "kelas": "7E"
+  },
+  {
+   "nama": "ABDIEL MUFIID ARAFA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3131393321",
+   "kelas": "7F"
+  },
+  {
+   "nama": "AKHTAR DEMIAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3136767486",
+   "kelas": "7F"
+  },
+  {
+   "nama": "ALFATIH ATTAYA RAMADIYANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3130326043",
+   "kelas": "7F"
+  },
+  {
+   "nama": "ALI MARLEY AKBAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3140129158",
+   "kelas": "7F"
+  },
+  {
+   "nama": "ALISHA FAWZIYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3142352550",
+   "kelas": "7F"
+  },
+  {
+   "nama": "ALTALUNA RADINKA YUDISTIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3130069198",
+   "kelas": "7F"
+  },
+  {
+   "nama": "AMEYLIA JASMINE",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138515137",
+   "kelas": "7F"
+  },
+  {
+   "nama": "ANINDYA KIRANA PRAYOGO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0139251268",
+   "kelas": "7F"
+  },
+  {
+   "nama": "ANINDYA PUTRI KANAYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3131132466",
+   "kelas": "7F"
+  },
+  {
+   "nama": "FATIN NASYITHA NAURA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3139044310",
+   "kelas": "7F"
+  },
+  {
+   "nama": "GALANG ARAYYAN FAUZI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0133256345",
+   "kelas": "7F"
+  },
+  {
+   "nama": "HAFIZ DZUFADHLIN ADTAMYLOV",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135203002",
+   "kelas": "7F"
+  },
+  {
+   "nama": "HANANIA ZULFA WARDOYO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3123888189",
+   "kelas": "7F"
+  },
+  {
+   "nama": "INTAN NURAZIZAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3136982936",
+   "kelas": "7F"
+  },
+  {
+   "nama": "KEYLA PUTRI WAHYUDI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132598717",
+   "kelas": "7F"
+  },
+  {
+   "nama": "LAUDYA NABILA BIANCA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3139404636",
+   "kelas": "7F"
+  },
+  {
+   "nama": "MARYAM",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137993468",
+   "kelas": "7F"
+  },
+  {
+   "nama": "MUHAMMAD AZZAM AL-HAFIZH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134069067",
+   "kelas": "7F"
+  },
+  {
+   "nama": "MUHAMMAD HAICXEL",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136323410",
+   "kelas": "7F"
+  },
+  {
+   "nama": "MUHAMMAD IBADILLAH ABID",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0139568823",
+   "kelas": "7F"
+  },
+  {
+   "nama": "MUHAMMAD ILHAM",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0124404267",
+   "kelas": "7F"
+  },
+  {
+   "nama": "MUHAMMAD SARIF ADRIYASA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3132095803",
+   "kelas": "7F"
+  },
+  {
+   "nama": "MUHAMMAD SULTHAN NAZHIRUL ASRAFI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3143031559",
+   "kelas": "7F"
+  },
+  {
+   "nama": "NADHILATUN NABILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3148737892",
+   "kelas": "7F"
+  },
+  {
+   "nama": "NUR ALISYA WULANDARI*",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0139879138",
+   "kelas": "7F"
+  },
+  {
+   "nama": "QIRANA ALFA MAZAYA ADZIMA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132645177",
+   "kelas": "7F"
+  },
+  {
+   "nama": "RAFAEL ARYA PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0136860573",
+   "kelas": "7F"
+  },
+  {
+   "nama": "RISKA CHIKA KIRANA SAPUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132999590",
+   "kelas": "7F"
+  },
+  {
+   "nama": "SACHIO SAECAR REVALDI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0133615916",
+   "kelas": "7F"
+  },
+  {
+   "nama": "SYABINA KIRANA PURI MAHESWARI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3149155141",
+   "kelas": "7F"
+  },
+  {
+   "nama": "SYAQILA LATUKAZIA PUTRI SUHENDRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134782364",
+   "kelas": "7F"
+  },
+  {
+   "nama": "TEGAR DWI PURNAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3144161232",
+   "kelas": "7F"
+  },
+  {
+   "nama": "VENESSA KIRANA PUTRI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0134786442",
+   "kelas": "7F"
+  },
+  {
+   "nama": "VINO BIMA ALGOZALLY",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3127825184",
+   "kelas": "7F"
+  },
+  {
+   "nama": "ZAINIAH ABIDAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0137375530",
+   "kelas": "7F"
+  },
+  {
+   "nama": "ABIRAMA HENDRA TAUFIK SEMBIRING",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135968167",
+   "kelas": "7G"
+  },
+  {
+   "nama": "ACINTYA AMEERA MEILING",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3136789916",
+   "kelas": "7G"
+  },
+  {
+   "nama": "ADINDA PUTRI NARDIANSYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132008906",
+   "kelas": "7G"
+  },
+  {
+   "nama": "ADRIANSAH PUTRA PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0134856258",
+   "kelas": "7G"
+  },
+  {
+   "nama": "ALARIC MUHAMMAD ZEROUN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3126644955",
+   "kelas": "7G"
+  },
+  {
+   "nama": "ALDJUNA ALSHAFA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3138562534",
+   "kelas": "7G"
+  },
+  {
+   "nama": "AQILA SALSABILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3148779064",
+   "kelas": "7G"
+  },
+  {
+   "nama": "BILLY GIANNI OZORA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0142055196",
+   "kelas": "7G"
+  },
+  {
+   "nama": "CAHAYA MENTARI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135694792",
+   "kelas": "7G"
+  },
+  {
+   "nama": "CHELSEA APRILIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3131105265",
+   "kelas": "7G"
+  },
+  {
+   "nama": "DAFIYA ATTARISA AKBAR",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3133319674",
+   "kelas": "7G"
+  },
+  {
+   "nama": "DESWITA PUTERI SAFFEA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3136985648",
+   "kelas": "7G"
+  },
+  {
+   "nama": "DESYARHANI PUTERI*",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137411927",
+   "kelas": "7G"
+  },
+  {
+   "nama": "HABIBI ATALAH WIBISONO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3131858592",
+   "kelas": "7G"
+  },
+  {
+   "nama": "JUNADI HANAFI ZUBAIDI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3139542569",
+   "kelas": "7G"
+  },
+  {
+   "nama": "KINARA NIZZA SHAQILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136856485",
+   "kelas": "7G"
+  },
+  {
+   "nama": "MAULA ZEROUN ARZACHEL",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135950139",
+   "kelas": "7G"
+  },
+  {
+   "nama": "MAZRUUQAH MUTIARA RABBANII",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0126905907",
+   "kelas": "7G"
+  },
+  {
+   "nama": "MIRZA IBRAHIMOVIC",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3136440985",
+   "kelas": "7G"
+  },
+  {
+   "nama": "MUHAMAD FADHLAN AL-RASYID",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134980731",
+   "kelas": "7G"
+  },
+  {
+   "nama": "MUHAMMAD FAISAL",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3147908634",
+   "kelas": "7G"
+  },
+  {
+   "nama": "MUHAMMAD FATIR RAIHAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3130251622",
+   "kelas": "7G"
+  },
+  {
+   "nama": "MUHAMMAD IHSAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3132684997",
+   "kelas": "7G"
+  },
+  {
+   "nama": "NAISYAFA NUZHAH NUR ISLAMA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0141731818",
+   "kelas": "7G"
+  },
+  {
+   "nama": "PUTRA PERTAMAKU MANCHESTER",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135240482",
+   "kelas": "7G"
+  },
+  {
+   "nama": "RIRI ALFIANY MUHAJIR",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0134915699",
+   "kelas": "7G"
+  },
+  {
+   "nama": "RIZKANA ABIDA AL KAYYISA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0133847460",
+   "kelas": "7G"
+  },
+  {
+   "nama": "RIZKI SAFARANIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0158196470",
+   "kelas": "7G"
+  },
+  {
+   "nama": "RIZQIA IDZANI NURRAHMANIA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3132741989",
+   "kelas": "7G"
+  },
+  {
+   "nama": "SHAFFA NANDIKA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0136000165",
+   "kelas": "7G"
+  },
+  {
+   "nama": "SURYA DHARMA PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3133968638",
+   "kelas": "7G"
+  },
+  {
+   "nama": "SYAUQI AHMAD JUNAEDI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3131050805",
+   "kelas": "7G"
+  },
+  {
+   "nama": "TRIS ANINDYTA GYTHA DHAFITHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0142357905",
+   "kelas": "7G"
+  },
+  {
+   "nama": "YASMIN AYUNINDYA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134607577",
+   "kelas": "7G"
+  },
+  {
+   "nama": "ZAHIRAH MULYANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3134060907",
+   "kelas": "7G"
+  },
+  {
+   "nama": "ZAHRA AULIA HERAWAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0144150453",
+   "kelas": "7G"
+  },
+  {
+   "nama": "ABEL CHALISTA OCTAVIA FAHRUROZI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3122951468",
+   "kelas": "7H"
+  },
+  {
+   "nama": "ADEEVA AFSHEEN NUR TAQWA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138729176",
+   "kelas": "7H"
+  },
+  {
+   "nama": "ADITYA WIDODO PRATAMA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0133613704",
+   "kelas": "7H"
+  },
+  {
+   "nama": "ADNIL HAMIZAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0133133419",
+   "kelas": "7H"
+  },
+  {
+   "nama": "ANDIKA ADHI PERMANA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3130621577",
+   "kelas": "7H"
+  },
+  {
+   "nama": "AQEELA SEPTIARA SANTOSO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0133140841",
+   "kelas": "7H"
+  },
+  {
+   "nama": "AQEELLA ZAHIRA INARA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0149667542",
+   "kelas": "7H"
+  },
+  {
+   "nama": "AQILA KHANZA PATRIANA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3137629379",
+   "kelas": "7H"
+  },
+  {
+   "nama": "BAGUS MUALIM KSATRIANTO",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3130444098",
+   "kelas": "7H"
+  },
+  {
+   "nama": "BAIZURA HANA SAKILA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3136103496",
+   "kelas": "7H"
+  },
+  {
+   "nama": "FAIZA ALYA AZIZA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0135693637",
+   "kelas": "7H"
+  },
+  {
+   "nama": "FITRIAH RAMADHANI AZZAHRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0137510703",
+   "kelas": "7H"
+  },
+  {
+   "nama": "IBNATY TAQIYYA HANAN",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0137223393",
+   "kelas": "7H"
+  },
+  {
+   "nama": "ILHAM NUROHMAN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3139769425",
+   "kelas": "7H"
+  },
+  {
+   "nama": "INDANA LAZULFA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3130819979",
+   "kelas": "7H"
+  },
+  {
+   "nama": "IRZA SALENA FARHA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135180301",
+   "kelas": "7H"
+  },
+  {
+   "nama": "KARISYA SASHIKIRANA VIRMANSYAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3139043057",
+   "kelas": "7H"
+  },
+  {
+   "nama": "KHAIRA WILDA WICAKSONO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0131828487",
+   "kelas": "7H"
+  },
+  {
+   "nama": "KHALDAA MEILIAN HARYANTO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3128698131",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MOCHAMMAD BAKHRUR RIZIEQ TAJUDIN",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3138501674",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MONA SAVIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3130813459",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MUHAMMAD AHZA DANISH",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135732421",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MUHAMMAD FARIZ NAUVAL",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3134533876",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MUHAMMAD HAIKAL AKBAR",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0138601202",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MUHAMMAD ILHAM FIRAAS AL RIZQI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0121932529",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MUHAMMAD INDRA YUSUF",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3146571745",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MUHAMMAD IRHAMMUBAROK",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0135140473",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MUHAMMAD KAHFI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "3135340155",
+   "kelas": "7H"
+  },
+  {
+   "nama": "MUHAMMAD RIZKY ADHITYA",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0145082367",
+   "kelas": "7H"
+  },
+  {
+   "nama": "NARESWARI PURI ANDINI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0134468172",
+   "kelas": "7H"
+  },
+  {
+   "nama": "NUR AZIZAH RAMADHANI",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3135895981",
+   "kelas": "7H"
+  },
+  {
+   "nama": "RAIHANAH ARKANA DAUNHIYO",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3138821828",
+   "kelas": "7H"
+  },
+  {
+   "nama": "SHAQUILLE FARREL FAUZI",
+   "jk": "L",
+   "agama": "Islam",
+   "nisn": "0133366298",
+   "kelas": "7H"
+  },
+  {
+   "nama": "SIFA DZAHIRA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0135758607",
+   "kelas": "7H"
+  },
+  {
+   "nama": "SITI ALMA ALFIAH",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "0158019528",
+   "kelas": "7H"
+  },
+  {
+   "nama": "ZENITA AYUDHIA INARA",
+   "jk": "P",
+   "agama": "Islam",
+   "nisn": "3139920170",
+   "kelas": "7H"
+  }
+ ],
+ "kelas": [
+  "7A",
+  "7B",
+  "7C",
+  "7D",
+  "7E",
+  "7F",
+  "7G",
+  "7H",
+  "8A",
+  "8B",
+  "8C",
+  "8D",
+  "8E",
+  "8F",
+  "8G",
+  "8H",
+  "9A",
+  "9B",
+  "9C",
+  "9D",
+  "9E",
+  "9F",
+  "9G",
+  "9H"
+ ]
+}
