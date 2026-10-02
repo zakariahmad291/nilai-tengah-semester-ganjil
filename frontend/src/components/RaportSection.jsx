@@ -3,8 +3,28 @@ import api, { openPdf, downloadFile } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
 import { toast } from "sonner";
-import { Printer, Download, Loader2, Search, FileText, Users } from "lucide-react";
+import {
+  Printer,
+  Download,
+  Loader2,
+  Search,
+  FileText,
+  Users,
+  Save,
+  ClipboardList,
+  IdCard,
+} from "lucide-react";
 
 export default function RaportSection({ kelas, walas }) {
   const [siswa, setSiswa] = useState([]);
@@ -12,6 +32,14 @@ export default function RaportSection({ kelas, walas }) {
   const [q, setQ] = useState("");
   const [busyId, setBusyId] = useState(null);
   const [classBusy, setClassBusy] = useState(false);
+  const [nip, setNip] = useState("");
+  const [nipInput, setNipInput] = useState("");
+  const [savingNip, setSavingNip] = useState(false);
+  const [kehOpen, setKehOpen] = useState(false);
+  const [kehStudent, setKehStudent] = useState(null);
+  const [kehForm, setKehForm] = useState({ sakit: 0, izin: 0, alfa: 0, catatan: "" });
+  const [kehLoading, setKehLoading] = useState(false);
+  const [kehSaving, setKehSaving] = useState(false);
 
   const load = useCallback(() => {
     setLoading(true);
@@ -24,6 +52,61 @@ export default function RaportSection({ kelas, walas }) {
   useEffect(() => {
     load();
   }, [load]);
+
+  useEffect(() => {
+    api.get(`/walas/${kelas}`).then((r) => {
+      setNip(r.data.nip || "");
+      setNipInput(r.data.nip || "");
+    });
+  }, [kelas]);
+
+  const saveNip = async () => {
+    setSavingNip(true);
+    try {
+      await api.patch(`/walas/${kelas}`, { nip: nipInput });
+      setNip(nipInput);
+      toast.success("NIP wali kelas tersimpan.");
+    } catch {
+      toast.error("Gagal menyimpan NIP.");
+    } finally {
+      setSavingNip(false);
+    }
+  };
+
+  const openKehadiran = async (s) => {
+    setKehStudent(s);
+    setKehOpen(true);
+    setKehLoading(true);
+    try {
+      const r = await api.get(`/kehadiran/${s.id}`);
+      setKehForm({
+        sakit: r.data.sakit || 0,
+        izin: r.data.izin || 0,
+        alfa: r.data.alfa || 0,
+        catatan: r.data.catatan || "",
+      });
+    } finally {
+      setKehLoading(false);
+    }
+  };
+
+  const saveKehadiran = async () => {
+    setKehSaving(true);
+    try {
+      await api.post(`/kehadiran/${kehStudent.id}`, {
+        sakit: Number(kehForm.sakit) || 0,
+        izin: Number(kehForm.izin) || 0,
+        alfa: Number(kehForm.alfa) || 0,
+        catatan: kehForm.catatan,
+      });
+      toast.success("Data kehadiran & catatan tersimpan.");
+      setKehOpen(false);
+    } catch {
+      toast.error("Gagal menyimpan kehadiran.");
+    } finally {
+      setKehSaving(false);
+    }
+  };
 
   const act = async (fn, id) => {
     setBusyId(id);
@@ -105,6 +188,28 @@ export default function RaportSection({ kelas, walas }) {
             </Button>
           </div>
         </div>
+        <div className="mt-4 pt-4 border-t border-primary/10 flex flex-col sm:flex-row sm:items-center gap-3">
+          <label className="text-sm font-medium text-foreground flex items-center gap-2 shrink-0">
+            <IdCard className="h-4 w-4 text-primary" /> NIP Wali Kelas
+          </label>
+          <Input
+            value={nipInput}
+            onChange={(e) => setNipInput(e.target.value.replace(/[^0-9]/g, ""))}
+            placeholder="Masukkan NIP (tampil di tanda tangan raport)"
+            className="h-10 bg-card flex-1"
+            data-testid="walas-nip-input"
+          />
+          <Button
+            variant="outline"
+            onClick={saveNip}
+            disabled={savingNip || nipInput === nip}
+            className="gap-2 shrink-0"
+            data-testid="save-nip-button"
+          >
+            {savingNip ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
+            Simpan NIP
+          </Button>
+        </div>
       </Card>
 
       {/* Search */}
@@ -146,6 +251,16 @@ export default function RaportSection({ kelas, walas }) {
                 <Button
                   variant="ghost"
                   size="sm"
+                  onClick={() => openKehadiran(s)}
+                  className="gap-1.5"
+                  data-testid={`raport-kehadiran-${i}`}
+                >
+                  <ClipboardList className="h-4 w-4" />
+                  <span className="hidden sm:inline">Kehadiran</span>
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
                   onClick={() => printStudent(s)}
                   disabled={busyId === s.id + "p"}
                   className="gap-1.5"
@@ -181,6 +296,62 @@ export default function RaportSection({ kelas, walas }) {
           )}
         </div>
       )}
+
+      <Dialog open={kehOpen} onOpenChange={setKehOpen}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>Kehadiran &amp; Catatan Wali Kelas</DialogTitle>
+            <DialogDescription>{kehStudent?.nama}</DialogDescription>
+          </DialogHeader>
+          {kehLoading ? (
+            <div className="py-8 flex justify-center">
+              <Loader2 className="h-5 w-5 animate-spin text-primary" />
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <div className="grid grid-cols-3 gap-3">
+                {["sakit", "izin", "alfa"].map((k) => (
+                  <div key={k} className="space-y-1.5">
+                    <Label className="capitalize">{k} (hari)</Label>
+                    <Input
+                      type="number"
+                      min="0"
+                      value={kehForm[k]}
+                      data-testid={`keh-${k}-input`}
+                      onChange={(e) => setKehForm((f) => ({ ...f, [k]: e.target.value }))}
+                      className="h-10 text-center"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="space-y-1.5">
+                <Label>Catatan Wali Kelas</Label>
+                <Textarea
+                  value={kehForm.catatan}
+                  data-testid="keh-catatan-input"
+                  onChange={(e) => setKehForm((f) => ({ ...f, catatan: e.target.value }))}
+                  placeholder="Tulis catatan untuk siswa (akan tercetak di raport)..."
+                  className="min-h-[100px]"
+                />
+              </div>
+            </div>
+          )}
+          <DialogFooter>
+            <Button variant="ghost" onClick={() => setKehOpen(false)}>
+              Batal
+            </Button>
+            <Button
+              onClick={saveKehadiran}
+              disabled={kehSaving || kehLoading}
+              className="gap-2"
+              data-testid="keh-save-button"
+            >
+              {kehSaving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
+              Simpan
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

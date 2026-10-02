@@ -107,6 +107,22 @@ class NilaiItem(BaseModel):
         return max(0.0, min(100.0, float(v)))
 
 
+class WalasNipInput(BaseModel):
+    nip: str = ""
+
+
+class KehadiranInput(BaseModel):
+    sakit: int = 0
+    izin: int = 0
+    alfa: int = 0
+    catatan: str = ""
+
+    @field_validator("sakit", "izin", "alfa")
+    @classmethod
+    def non_negative(cls, v):
+        return max(0, int(v))
+
+
 class NilaiBulk(BaseModel):
     kelas: str
     mapel: str
@@ -176,7 +192,45 @@ async def _build_raport_data(kelas: str):
         nmap.setdefault(n["siswa_id"], {})[n["mapel"]] = n
     walas_doc = await db.walas.find_one({"kelas": kelas}, {"_id": 0})
     walas = walas_doc["nama"] if walas_doc else "-"
-    return mapel_list, siswa, nmap, walas
+    walas_nip = (walas_doc or {}).get("nip", "") or ""
+    keh_docs = await db.kehadiran.find({"kelas": kelas}, {"_id": 0}).to_list(2000)
+    kmap = {k["siswa_id"]: k for k in keh_docs}
+    return mapel_list, siswa, nmap, walas, walas_nip, kmap
+
+
+@api_router.get("/walas/{kelas}")
+async def get_walas(kelas: str, user: dict = Depends(get_current_user)):
+    doc = await db.walas.find_one({"kelas": kelas}, {"_id": 0})
+    if not doc:
+        raise HTTPException(status_code=404, detail="Wali kelas tidak ditemukan")
+    return {"kelas": kelas, "nama": doc["nama"], "nip": doc.get("nip", "") or ""}
+
+
+@api_router.patch("/walas/{kelas}")
+async def set_walas_nip(kelas: str, data: WalasNipInput, user: dict = Depends(get_current_user)):
+    r = await db.walas.update_one({"kelas": kelas}, {"$set": {"nip": data.nip.strip()}})
+    if r.matched_count == 0:
+        raise HTTPException(status_code=404, detail="Wali kelas tidak ditemukan")
+    return {"status": "ok"}
+
+
+@api_router.get("/kehadiran/{siswa_id}")
+async def get_kehadiran(siswa_id: str, user: dict = Depends(get_current_user)):
+    doc = await db.kehadiran.find_one({"siswa_id": siswa_id}, {"_id": 0})
+    if not doc:
+        return {"siswa_id": siswa_id, "sakit": 0, "izin": 0, "alfa": 0, "catatan": ""}
+    return doc
+
+
+@api_router.post("/kehadiran/{siswa_id}")
+async def save_kehadiran(siswa_id: str, data: KehadiranInput, user: dict = Depends(get_current_user)):
+    s = await db.siswa.find_one({"id": siswa_id}, {"_id": 0})
+    if not s:
+        raise HTTPException(status_code=404, detail="Siswa tidak ditemukan")
+    doc = data.model_dump()
+    doc.update({"siswa_id": siswa_id, "kelas": s["kelas"]})
+    await db.kehadiran.update_one({"siswa_id": siswa_id}, {"$set": doc}, upsert=True)
+    return {"status": "ok"}
 
 
 @api_router.get("/raport/student/{siswa_id}")
@@ -184,7 +238,7 @@ async def raport_student(siswa_id: str, user: dict = Depends(get_current_user)):
     s = await db.siswa.find_one({"id": siswa_id}, {"_id": 0})
     if not s:
         raise HTTPException(status_code=404, detail="Siswa tidak ditemukan")
-    mapel_list, _, nmap, walas = await _build_raport_data(s["kelas"])
+    mapel_list, _, nmap, walas, walas_nip, kmap = await _build_raport_data(s["kelas"])
     rows = []
     sm = nmap.get(siswa_id, {})
     for m in mapel_list:
@@ -192,7 +246,8 @@ async def raport_student(siswa_id: str, user: dict = Depends(get_current_user)):
         rows.append({"mapel": m, "kktp": KKTP,
                      "f1": n.get("f1"), "f2": n.get("f2"), "f3": n.get("f3"),
                      "s1": n.get("s1"), "s2": n.get("s2"), "s3": n.get("s3")})
-    return {"siswa": s, "walas": walas, "school": SCHOOL, "nilai": rows}
+    return {"siswa": s, "walas": walas, "walas_nip": walas_nip, "school": SCHOOL,
+            "nilai": rows, "kehadiran": kmap.get(siswa_id, {})}
 
 
 # ---------------- PDF generation ----------------
@@ -204,7 +259,7 @@ def _fmt(v):
     return str(v)
 
 
-def _build_raport_story(story, styles, siswa, walas, mapel_rows):
+def _build_raport_story(story, styles, siswa, walas, walas_nip, mapel_rows, kehadiran):
     from reportlab.platypus import Paragraph, Spacer, Table, TableStyle, Image as RLImage
     from reportlab.lib import colors
     from reportlab.lib.units import mm
@@ -273,21 +328,28 @@ def _build_raport_story(story, styles, siswa, walas, mapel_rows):
     story.append(Spacer(1, 8))
 
     # Ketidakhadiran + catatan
+    k = kehadiran or {}
+    sakit, izin, alfa = int(k.get("sakit", 0) or 0), int(k.get("izin", 0) or 0), int(k.get("alfa", 0) or 0)
+    catatan_text = (k.get("catatan") or "").strip()
     ket = Table([
         [Paragraph("<b>KETIDAKHADIRAN</b>", styles["Normal"]), ""],
-        [Paragraph("Sakit", styles["Normal"]), Paragraph(":  ......  hari", styles["Normal"])],
-        [Paragraph("Izin", styles["Normal"]), Paragraph(":  ......  hari", styles["Normal"])],
-        [Paragraph("Alfa", styles["Normal"]), Paragraph(":  ......  hari", styles["Normal"])],
-    ], colWidths=[30 * mm, 50 * mm])
-    ket.setStyle(TableStyle([("BOTTOMPADDING", (0, 0), (-1, -1), 2)]))
+        [Paragraph("Sakit", styles["Normal"]), Paragraph(f":  {sakit}  hari", styles["Normal"])],
+        [Paragraph("Izin", styles["Normal"]), Paragraph(f":  {izin}  hari", styles["Normal"])],
+        [Paragraph("Alfa", styles["Normal"]), Paragraph(f":  {alfa}  hari", styles["Normal"])],
+    ], colWidths=[25 * mm, 55 * mm])
+    ket.setStyle(TableStyle([("BOTTOMPADDING", (0, 0), (-1, -1), 2), ("SPAN", (0, 0), (1, 0))]))
 
+    catatan_body = catatan_text.replace("\n", "<br/>") if catatan_text else "<br/><br/><br/>"
     catatan = Table([
         [Paragraph("<b>CATATAN WALI KELAS</b>", styles["Normal"])],
-        [Paragraph("<br/><br/><br/>", styles["Normal"])],
+        [Paragraph(catatan_body, styles["Normal"])],
     ], colWidths=[90 * mm])
     catatan.setStyle(TableStyle([
         ("BOX", (0, 1), (-1, 1), 0.5, colors.black),
-        ("TOPPADDING", (0, 1), (-1, 1), 10),
+        ("TOPPADDING", (0, 1), (-1, 1), 8),
+        ("BOTTOMPADDING", (0, 1), (-1, 1), 8),
+        ("LEFTPADDING", (0, 1), (-1, 1), 6),
+        ("RIGHTPADDING", (0, 1), (-1, 1), 6),
     ]))
     combo = Table([[ket, catatan]], colWidths=[85 * mm, 95 * mm])
     combo.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP")]))
@@ -300,7 +362,7 @@ def _build_raport_story(story, styles, siswa, walas, mapel_rows):
         [Paragraph("<para align=center>Orangtua/Wali Murid</para>", styles["Normal"]),
          Paragraph("<para align=center>Wali Kelas</para>", styles["Normal"])],
         [Paragraph("<para align=center><br/><br/><br/>(......................)</para>", styles["Normal"]),
-         Paragraph(f"<para align=center><br/><br/><br/><b>{walas}</b><br/>NIP. ......................</para>", styles["Normal"])],
+         Paragraph(f"<para align=center><br/><br/><br/><b>{walas}</b><br/>NIP. {walas_nip if walas_nip else '......................'}</para>", styles["Normal"])],
     ], colWidths=[90 * mm, 90 * mm])
     story.append(sig)
     story.append(Spacer(1, 6))
@@ -329,10 +391,10 @@ def _render_pdf(siswa_rows):
     styles["Normal"].leading = 12
 
     story = []
-    for idx, (siswa, walas, rows) in enumerate(siswa_rows):
+    for idx, (siswa, walas, walas_nip, rows, kehadiran) in enumerate(siswa_rows):
         if idx > 0:
             story.append(PageBreak())
-        _build_raport_story(story, styles, siswa, walas, rows)
+        _build_raport_story(story, styles, siswa, walas, walas_nip, rows, kehadiran)
     doc.build(story)
     buf.seek(0)
     return buf
@@ -343,10 +405,10 @@ async def raport_pdf_student(siswa_id: str, user: dict = Depends(get_current_use
     s = await db.siswa.find_one({"id": siswa_id}, {"_id": 0})
     if not s:
         raise HTTPException(status_code=404, detail="Siswa tidak ditemukan")
-    mapel_list, _, nmap, walas = await _build_raport_data(s["kelas"])
+    mapel_list, _, nmap, walas, walas_nip, kmap = await _build_raport_data(s["kelas"])
     sm = nmap.get(siswa_id, {})
     rows = [{"mapel": m, "kktp": KKTP, **{k: sm.get(m, {}).get(k) for k in ["f1", "f2", "f3", "s1", "s2", "s3"]}} for m in mapel_list]
-    buf = _render_pdf([(s, walas, rows)])
+    buf = _render_pdf([(s, walas, walas_nip, rows, kmap.get(siswa_id, {}))])
     fname = f"Raport_{s['nama'].replace(' ', '_')}_{s['kelas']}.pdf"
     return StreamingResponse(buf, media_type="application/pdf",
                              headers={"Content-Disposition": f'attachment; filename="{fname}"'})
@@ -354,14 +416,14 @@ async def raport_pdf_student(siswa_id: str, user: dict = Depends(get_current_use
 
 @api_router.get("/raport/pdf/kelas/{kelas}")
 async def raport_pdf_kelas(kelas: str, user: dict = Depends(get_current_user)):
-    mapel_list, siswa, nmap, walas = await _build_raport_data(kelas)
+    mapel_list, siswa, nmap, walas, walas_nip, kmap = await _build_raport_data(kelas)
     if not siswa:
         raise HTTPException(status_code=404, detail="Kelas tidak ditemukan")
     all_rows = []
     for s in siswa:
         sm = nmap.get(s["id"], {})
         rows = [{"mapel": m, "kktp": KKTP, **{k: sm.get(m, {}).get(k) for k in ["f1", "f2", "f3", "s1", "s2", "s3"]}} for m in mapel_list]
-        all_rows.append((s, walas, rows))
+        all_rows.append((s, walas, walas_nip, rows, kmap.get(s["id"], {})))
     buf = _render_pdf(all_rows)
     return StreamingResponse(buf, media_type="application/pdf",
                              headers={"Content-Disposition": f'attachment; filename="Raport_Kelas_{kelas}.pdf"'})
@@ -373,7 +435,7 @@ async def leger_excel(kelas: str, user: dict = Depends(get_current_user)):
     from openpyxl import Workbook
     from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 
-    mapel_list, siswa, nmap, walas = await _build_raport_data(kelas)
+    mapel_list, siswa, nmap, walas, walas_nip, kmap = await _build_raport_data(kelas)
     if not siswa:
         raise HTTPException(status_code=404, detail="Kelas tidak ditemukan")
 

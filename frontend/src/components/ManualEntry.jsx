@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import api from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,7 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
-import { Save, ChevronLeft, ChevronRight, Loader2, User } from "lucide-react";
+import { ChevronLeft, ChevronRight, Loader2, User, CheckCircle2, AlertCircle } from "lucide-react";
 
 const FORMATIF = [
   { key: "f1", label: "Formatif 1" },
@@ -39,7 +39,9 @@ export default function ManualEntry({ kelas, mapel }) {
   const [rows, setRows] = useState([]);
   const [idx, setIdx] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [saving, setSaving] = useState(false);
+  const [status, setStatus] = useState("idle");
+  const saveTimer = useRef(null);
+  const currentRef = useRef(null);
 
   const load = useCallback(() => {
     setLoading(true);
@@ -67,6 +69,7 @@ export default function ManualEntry({ kelas, mapel }) {
   }, [load]);
 
   const current = rows[idx];
+  currentRef.current = current;
 
   const setField = (key, value) => {
     setRows((prev) => {
@@ -74,34 +77,48 @@ export default function ManualEntry({ kelas, mapel }) {
       next[idx] = { ...next[idx], [key]: value };
       return next;
     });
+    scheduleSave();
   };
 
-  const saveStudent = async () => {
-    setSaving(true);
-    try {
-      const r = current;
-      await api.post("/nilai/bulk", {
-        kelas,
-        mapel,
-        items: [
-          {
-            siswa_id: r.siswa_id,
-            f1: r.f1 === "" ? null : Number(r.f1),
-            f2: r.f2 === "" ? null : Number(r.f2),
-            f3: r.f3 === "" ? null : Number(r.f3),
-            s1: r.s1 === "" ? null : Number(r.s1),
-            s2: r.s2 === "" ? null : Number(r.s2),
-            s3: r.s3 === "" ? null : Number(r.s3),
-          },
-        ],
-      });
-      toast.success(`Nilai ${r.nama} tersimpan.`);
-      if (idx < rows.length - 1) setIdx(idx + 1);
-    } catch (e) {
-      toast.error("Gagal menyimpan nilai.");
-    } finally {
-      setSaving(false);
-    }
+  const saveStudent = useCallback(
+    async (r) => {
+      if (!r) return;
+      setStatus("saving");
+      try {
+        await api.post("/nilai/bulk", {
+          kelas,
+          mapel,
+          items: [
+            {
+              siswa_id: r.siswa_id,
+              f1: r.f1 === "" ? null : Number(r.f1),
+              f2: r.f2 === "" ? null : Number(r.f2),
+              f3: r.f3 === "" ? null : Number(r.f3),
+              s1: r.s1 === "" ? null : Number(r.s1),
+              s2: r.s2 === "" ? null : Number(r.s2),
+              s3: r.s3 === "" ? null : Number(r.s3),
+            },
+          ],
+        });
+        setStatus("saved");
+      } catch (e) {
+        setStatus("error");
+        toast.error("Gagal menyimpan nilai.");
+      }
+    },
+    [kelas, mapel]
+  );
+
+  const scheduleSave = useCallback(() => {
+    setStatus("saving");
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    saveTimer.current = setTimeout(() => saveStudent(currentRef.current), 800);
+  }, [saveStudent]);
+
+  const goNext = async () => {
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    await saveStudent(currentRef.current);
+    if (idx < rows.length - 1) setIdx(idx + 1);
   };
 
   if (loading)
@@ -171,17 +188,37 @@ export default function ManualEntry({ kelas, mapel }) {
       </div>
 
       <Card className="p-6 sm:p-8">
-        <div className="flex items-center gap-3 pb-5 mb-6 border-b border-border">
-          <div className="h-12 w-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-            <User className="h-5 w-5" />
+        <div className="flex items-center justify-between gap-3 pb-5 mb-6 border-b border-border">
+          <div className="flex items-center gap-3">
+            <div className="h-12 w-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
+              <User className="h-5 w-5" />
+            </div>
+            <div>
+              <p className="font-display font-bold text-lg text-foreground" data-testid="manual-current-name">
+                {current.nama}
+              </p>
+              <p className="text-sm text-muted-foreground">
+                NISN {current.nisn} &middot; Siswa ke-{idx + 1} dari {rows.length}
+              </p>
+            </div>
           </div>
-          <div>
-            <p className="font-display font-bold text-lg text-foreground" data-testid="manual-current-name">
-              {current.nama}
-            </p>
-            <p className="text-sm text-muted-foreground">
-              NISN {current.nisn} &middot; Siswa ke-{idx + 1} dari {rows.length}
-            </p>
+          <div className="flex items-center gap-1.5 text-sm" data-testid="manual-autosave-status">
+            {status === "saving" ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin text-primary" />
+                <span className="text-muted-foreground hidden sm:inline">Menyimpan...</span>
+              </>
+            ) : status === "error" ? (
+              <>
+                <AlertCircle className="h-4 w-4 text-red-600" />
+                <span className="text-red-600 hidden sm:inline">Gagal</span>
+              </>
+            ) : status === "saved" ? (
+              <>
+                <CheckCircle2 className="h-4 w-4 text-green-600" />
+                <span className="text-muted-foreground hidden sm:inline">Tersimpan</span>
+              </>
+            ) : null}
           </div>
         </div>
 
@@ -201,13 +238,13 @@ export default function ManualEntry({ kelas, mapel }) {
         </div>
 
         <Button
-          onClick={saveStudent}
-          disabled={saving}
+          onClick={goNext}
+          disabled={idx === rows.length - 1}
           className="w-full mt-8 h-12 text-base gap-2"
           data-testid="manual-save-button"
         >
-          {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
-          Simpan &amp; Lanjut
+          Berikutnya
+          <ChevronRight className="h-4 w-4" />
         </Button>
       </Card>
     </div>

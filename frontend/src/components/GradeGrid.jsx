@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import api from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Save, ClipboardPaste, Loader2, Info } from "lucide-react";
+import { ClipboardPaste, Loader2, Info, CheckCircle2, AlertCircle } from "lucide-react";
 
 const COLS = ["f1", "f2", "f3", "s1", "s2", "s3"];
 const LABELS = { f1: "F1", f2: "F2", f3: "F3", s1: "S1", s2: "S2", s3: "S3" };
@@ -31,7 +31,9 @@ function clampVal(raw) {
 export default function GradeGrid({ kelas, mapel }) {
   const [rows, setRows] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [saving, setSaving] = useState(false);
+  const [status, setStatus] = useState("idle");
+  const saveTimer = useRef(null);
+  const rowsRef = useRef([]);
   const [pasteOpen, setPasteOpen] = useState(false);
   const [pasteText, setPasteText] = useState("");
 
@@ -59,12 +61,45 @@ export default function GradeGrid({ kelas, mapel }) {
     load();
   }, [load]);
 
+  useEffect(() => {
+    rowsRef.current = rows;
+  }, [rows]);
+
+  const buildItems = (data) =>
+    data.map((r) => ({
+      siswa_id: r.siswa_id,
+      f1: r.f1 === "" ? null : Number(r.f1),
+      f2: r.f2 === "" ? null : Number(r.f2),
+      f3: r.f3 === "" ? null : Number(r.f3),
+      s1: r.s1 === "" ? null : Number(r.s1),
+      s2: r.s2 === "" ? null : Number(r.s2),
+      s3: r.s3 === "" ? null : Number(r.s3),
+    }));
+
+  const doSave = useCallback(async () => {
+    setStatus("saving");
+    try {
+      await api.post("/nilai/bulk", { kelas, mapel, items: buildItems(rowsRef.current) });
+      setStatus("saved");
+    } catch (e) {
+      setStatus("error");
+      toast.error("Gagal menyimpan nilai.");
+    }
+  }, [kelas, mapel]);
+
+  const scheduleSave = useCallback(() => {
+    setStatus("saving");
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    saveTimer.current = setTimeout(doSave, 900);
+  }, [doSave]);
+
   const setCell = (rowIdx, col, value) => {
     setRows((prev) => {
       const next = [...prev];
       next[rowIdx] = { ...next[rowIdx], [col]: value };
       return next;
     });
+    scheduleSave();
   };
 
   const handlePaste = (e, rowIdx, colIdx) => {
@@ -87,6 +122,7 @@ export default function GradeGrid({ kelas, mapel }) {
       return next;
     });
     toast.success(`${lines.length} baris ditempel ke tabel.`);
+    scheduleSave();
   };
 
   const applyPasteModal = () => {
@@ -112,27 +148,7 @@ export default function GradeGrid({ kelas, mapel }) {
     toast.success(`${Math.min(lines.length, rows.length)} baris berhasil ditempel.`);
     setPasteOpen(false);
     setPasteText("");
-  };
-
-  const save = async () => {
-    setSaving(true);
-    try {
-      const items = rows.map((r) => ({
-        siswa_id: r.siswa_id,
-        f1: r.f1 === "" ? null : Number(r.f1),
-        f2: r.f2 === "" ? null : Number(r.f2),
-        f3: r.f3 === "" ? null : Number(r.f3),
-        s1: r.s1 === "" ? null : Number(r.s1),
-        s2: r.s2 === "" ? null : Number(r.s2),
-        s3: r.s3 === "" ? null : Number(r.s3),
-      }));
-      await api.post("/nilai/bulk", { kelas, mapel, items });
-      toast.success("Nilai berhasil disimpan.");
-    } catch (e) {
-      toast.error("Gagal menyimpan nilai.");
-    } finally {
-      setSaving(false);
-    }
+    scheduleSave();
   };
 
   const cellClass = (v) => {
@@ -190,10 +206,32 @@ export default function GradeGrid({ kelas, mapel }) {
               </DialogFooter>
             </DialogContent>
           </Dialog>
-          <Button onClick={save} disabled={saving} className="gap-2" data-testid="save-nilai-button">
-            {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
-            Simpan Nilai
-          </Button>
+          <div
+            className="flex items-center gap-2 text-sm px-3 py-2 rounded-lg bg-secondary"
+            data-testid="autosave-status"
+          >
+            {status === "saving" ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin text-primary" />
+                <span className="text-muted-foreground">Menyimpan...</span>
+              </>
+            ) : status === "error" ? (
+              <>
+                <AlertCircle className="h-4 w-4 text-red-600" />
+                <span className="text-red-600">Gagal menyimpan</span>
+              </>
+            ) : status === "saved" ? (
+              <>
+                <CheckCircle2 className="h-4 w-4 text-green-600" />
+                <span className="text-muted-foreground">Tersimpan</span>
+              </>
+            ) : (
+              <>
+                <CheckCircle2 className="h-4 w-4 text-muted-foreground" />
+                <span className="text-muted-foreground">Tersimpan otomatis</span>
+              </>
+            )}
+          </div>
         </div>
       </div>
 
