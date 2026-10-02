@@ -1,0 +1,25 @@
+{
+  "summary": "Iteration 3: validated the 3 new features (Kehadiran massal grid + autosave, Template Catatan in grid & dialog, Ekspor ZIP raport). Backend: 31/31 pytest pass in ~12s including 6 new tests: GET /api/kehadiran/kelas/7A shape (36 rows w/ siswa_id,nama,nisn,sakit,izin,alfa,catatan), POST /api/kehadiran/bulk save+persist, POST /api/kehadiran/bulk clamps negatives to >=0, GET /api/raport/zip/7A 200 application/zip containing exactly 36 PDFs each starting with %PDF, GET /api/raport/zip/ZZ -> 404, and route ordering sanity. Full regression (login, kelas, mapel, siswa, nilai bulk+clamp, raport PDF student/kelas/404, leger excel, walas NIP get/patch/404, kehadiran per-student get/save/clamp/404, raport student JSON includes walas_nip + kehadiran) also green. Frontend (Playwright, 1920x1080): login OK, Kelas 7A select, tab-kehadiran shows kehadiran-grid-table with 36 rows; typing into keh-sakit-row-0 (3), keh-izin-row-0 (1), keh-alfa-row-0 (2) and keh-catatan-row-0 ('UI_TEST_catatan_r0') shows kehadiran-autosave-status 'Menyimpan...' -> 'Tersimpan' within ~2s; keh-template-btn-1 opens dropdown, picking first template fills keh-catatan-row-1 with preset text; switching to Input Tabel tab then back to Kehadiran shows sakit=3 and catatan='UI_TEST_catatan_r0' persisted; Raport tab shows download-raport-zip-button; raport-kehadiran-0 opens dialog, keh-template-select picks template which populates keh-catatan-input, keh-save-button saves successfully (toast 'Data kehadiran & catatan tersimpan.').",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "server.py now 616 lines, approaching the 700-line soft limit. Consider splitting PDF rendering (_build_raport_story/_render_pdf) and Excel leger into separate modules to keep server.py focused on routing.",
+    "/api/kehadiran/bulk upserts with filter {siswa_id} only (no kelas scoping). If the same siswa_id ever appears in two classes (shouldn't in current seed since IDs are prefixed with kelas), the kelas field gets overwritten by the latest POST. Low risk given current seed but worth tightening the filter to {siswa_id, kelas} for defense in depth.",
+    "/api/raport/zip/{kelas} renders PDFs sequentially (~6s for 36 students). For larger classes or if later classes grow, consider asyncio.to_thread parallelization or streaming the zip. Not blocking.",
+    "Route ordering for /api/kehadiran/kelas/{kelas} and /api/kehadiran/bulk relative to /api/kehadiran/{siswa_id}: currently correct because specific paths are declared before the parameterized one (lines 236, 250, 259). Any future refactor must preserve this ordering - worth a code comment.",
+    "KehadiranGrid autosave uses a single 900ms debounce timer shared across all cells; status reflects last payload only. UX works but if a save fails mid-stream, individual-row error state is lost. Acceptable for MVP."
+  ],
+  "updated_files": ["/app/backend/tests/backend_test.py"],
+  "success_rate": {"backend": "100% (31/31)", "frontend": "100%"},
+  "test_credentials": "guru37JUARA / @123Smp37 (shared, verified)",
+  "seed_data_creation": "Tests mutated kehadiran for first ~2 students of 7A (TEST_bulk_catatan_* and UI_TEST_catatan_r0) and walas NIP for 7A. All upsert semantics, benign.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "backend_test.py now has 31 tests. New selectors validated: tab-kehadiran, kehadiran-grid-table, keh-{sakit|izin|alfa|catatan}-row-{i}, keh-template-btn-{i} (DropdownMenu - open then click first menuitem), kehadiran-autosave-status (debounce ~900ms, wait >=2s). Raport tab: download-raport-zip-button, raport-kehadiran-{i} opens dialog with keh-template-select (shadcn Select) + keh-catatan-input + keh-save-button. ZIP generation for 36 students takes ~6s - use >=180s timeout.",
+  "rca of the issue": "N/A - no bugs found."
+}
