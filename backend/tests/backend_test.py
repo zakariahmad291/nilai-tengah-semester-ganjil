@@ -170,3 +170,108 @@ def test_leger_excel(auth):
 def test_leger_excel_bad_kelas(auth):
     r = auth.get(f"{BASE_URL}/api/leger/excel/ZZ", timeout=30)
     assert r.status_code == 404
+
+
+# ---------- Walas NIP (new) ----------
+def test_walas_get_and_patch_nip(auth):
+    r = auth.get(f"{BASE_URL}/api/walas/7A", timeout=20)
+    assert r.status_code == 200
+    data = r.json()
+    assert data["kelas"] == "7A"
+    assert "nama" in data and "nip" in data
+
+    new_nip = "198501012010011234"
+    r2 = auth.patch(f"{BASE_URL}/api/walas/7A", json={"nip": new_nip}, timeout=20)
+    assert r2.status_code == 200
+    assert r2.json().get("status") == "ok"
+
+    r3 = auth.get(f"{BASE_URL}/api/walas/7A", timeout=20)
+    assert r3.status_code == 200
+    assert r3.json()["nip"] == new_nip
+
+
+def test_walas_patch_missing_class(auth):
+    r = auth.patch(f"{BASE_URL}/api/walas/ZZ", json={"nip": "123"}, timeout=20)
+    assert r.status_code == 404
+
+
+# ---------- Kehadiran (new) ----------
+def test_kehadiran_default_zero(auth):
+    r = auth.get(f"{BASE_URL}/api/siswa?kelas=7A", timeout=20)
+    sid = r.json()[0]["id"]
+    r2 = auth.get(f"{BASE_URL}/api/kehadiran/{sid}", timeout=20)
+    assert r2.status_code == 200
+    data = r2.json()
+    # default (no doc) returns zeros
+    assert data["siswa_id"] == sid
+    assert data["sakit"] >= 0 and data["izin"] >= 0 and data["alfa"] >= 0
+
+
+def test_kehadiran_save_and_persist(auth):
+    r = auth.get(f"{BASE_URL}/api/siswa?kelas=7A", timeout=20)
+    sid = r.json()[0]["id"]
+    payload = {"sakit": 2, "izin": 1, "alfa": 0, "catatan": "Bagus, pertahankan"}
+    r2 = auth.post(f"{BASE_URL}/api/kehadiran/{sid}", json=payload, timeout=20)
+    assert r2.status_code == 200
+    assert r2.json().get("status") == "ok"
+    r3 = auth.get(f"{BASE_URL}/api/kehadiran/{sid}", timeout=20)
+    assert r3.status_code == 200
+    d = r3.json()
+    assert d["sakit"] == 2 and d["izin"] == 1 and d["alfa"] == 0
+    assert d["catatan"] == "Bagus, pertahankan"
+
+
+def test_kehadiran_clamps_negative(auth):
+    r = auth.get(f"{BASE_URL}/api/siswa?kelas=7A", timeout=20)
+    sid = r.json()[0]["id"]
+    r2 = auth.post(f"{BASE_URL}/api/kehadiran/{sid}",
+                   json={"sakit": -5, "izin": -3, "alfa": -1, "catatan": "x"},
+                   timeout=20)
+    assert r2.status_code == 200
+    r3 = auth.get(f"{BASE_URL}/api/kehadiran/{sid}", timeout=20)
+    d = r3.json()
+    assert d["sakit"] == 0 and d["izin"] == 0 and d["alfa"] == 0
+
+
+def test_kehadiran_bad_siswa(auth):
+    r = auth.post(f"{BASE_URL}/api/kehadiran/NONE_000",
+                  json={"sakit": 1, "izin": 0, "alfa": 0, "catatan": ""}, timeout=20)
+    assert r.status_code == 404
+
+
+# ---------- Nilai validation (clamp >100) ----------
+def test_nilai_bulk_clamps_above_100(auth):
+    r = auth.get(f"{BASE_URL}/api/siswa?kelas=7A", timeout=20)
+    sid = r.json()[0]["id"]
+    payload = {
+        "kelas": "7A", "mapel": "Matematika",
+        "items": [{"siswa_id": sid, "f1": 150, "f2": -20, "f3": 95,
+                   "s1": None, "s2": 101, "s3": 0}]
+    }
+    r2 = auth.post(f"{BASE_URL}/api/nilai/bulk", json=payload, timeout=20)
+    assert r2.status_code == 200, r2.text
+    r3 = auth.get(f"{BASE_URL}/api/nilai?kelas=7A&mapel=Matematika", timeout=20)
+    rows = {x["siswa_id"]: x for x in r3.json()}
+    saved = rows[sid]
+    assert saved["f1"] == 100  # clamped from 150
+    assert saved["f2"] == 0    # clamped from -20
+    assert saved["f3"] == 95
+    assert saved["s2"] == 100  # clamped from 101
+    assert saved["s3"] == 0
+
+
+# ---------- Raport reflects new fields ----------
+def test_raport_student_includes_walas_nip_and_kehadiran(auth):
+    # Ensure NIP is set and kehadiran saved
+    auth.patch(f"{BASE_URL}/api/walas/7A", json={"nip": "199001012015031111"}, timeout=20)
+    r = auth.get(f"{BASE_URL}/api/siswa?kelas=7A", timeout=20)
+    sid = r.json()[0]["id"]
+    auth.post(f"{BASE_URL}/api/kehadiran/{sid}",
+              json={"sakit": 3, "izin": 0, "alfa": 1, "catatan": "Rajin"}, timeout=20)
+    r2 = auth.get(f"{BASE_URL}/api/raport/student/{sid}", timeout=30)
+    assert r2.status_code == 200
+    d = r2.json()
+    assert d.get("walas_nip") == "199001012015031111"
+    k = d.get("kehadiran", {})
+    assert k.get("sakit") == 3 and k.get("alfa") == 1
+    assert k.get("catatan") == "Rajin"

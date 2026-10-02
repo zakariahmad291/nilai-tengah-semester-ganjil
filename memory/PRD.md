@@ -29,17 +29,16 @@ Web app untuk guru SMPN 37 Jakarta menginput nilai murid. 2 jenis nilai: Formati
 ## Implemented (2026-06)
 - [x] Auth login bersama + proteksi endpoint + /auth/me.
 - [x] Dashboard: selektor kelas & mapel, info wali kelas + jumlah siswa.
-- [x] GradeGrid: input langsung, paste ke sel, modal tempel Excel, warna KKTP (hijau >=75, merah <75), simpan bulk.
-- [x] ManualEntry: form per siswa, navigasi prev/next, simpan & lanjut.
-- [x] RaportSection: cetak/unduh PDF per murid & per kelas (pencarian siswa).
+- [x] GradeGrid: input langsung, paste ke sel, modal tempel Excel, warna KKTP (hijau >=75, merah <75), AUTOSAVE (debounce 900ms, indikator status).
+- [x] ManualEntry: form per siswa, navigasi prev/next, AUTOSAVE + tombol "Berikutnya".
+- [x] RaportSection: cetak/unduh PDF per murid & per kelas, editor NIP wali kelas, dialog Kehadiran (sakit/izin/alfa) + Catatan per siswa.
 - [x] LegerSection: unduh leger nilai Excel per kelas.
-- [x] PDF raport meniru contoh (kop sekolah, logo Jaya Raya, NILAI AKADEMIK F1-F3/S1-S3, KKTP 75, ketidakhadiran, catatan wali kelas, tanda tangan).
-- [x] Validasi nilai 0-100 di backend.
-- [x] Tested: 17/17 backend, frontend e2e 100%.
+- [x] PDF raport meniru contoh (kop, logo Jaya Raya, F1-F3/S1-S3, KKTP 75, ketidakhadiran terisi, catatan wali kelas tercetak, NIP wali kelas otomatis, tanda tangan).
+- [x] Validasi backend: nilai 0-100, kehadiran >=0.
+- [x] Tested: iter1 17/17 backend; iter2 25/25 backend; frontend e2e 100%.
 
 ## Backlog / Next (P1/P2)
 - P1: Rekap persentase ketuntasan per kelas/mapel (dashboard statistik).
-- P1: Isi data ketidakhadiran (sakit/izin/alfa) & catatan wali kelas yang tersimpan dan muncul di raport.
-- P2: Peran/akun per guru (NIP wali kelas otomatis di raport).
-- P2: Riwayat perubahan nilai / autosave.
+- P2: Peran/akun per guru.
+- P2: Riwayat perubahan nilai.
 - P2: Split server.py ke modul (routes/services).

@@ -1,0 +1,25 @@
+{
+  "summary": "Iteration 2 validated the three new features (NIP wali kelas, autosave debounced input, kehadiran dialog) plus a light regression on prior endpoints. Backend: 25/25 pytest tests pass in ~5.6s, including new tests for GET/PATCH /api/walas/{kelas}, GET/POST /api/kehadiran/{siswa_id}, non-negative clamp on sakit/izin/alfa, 0-100 clamp on nilai bulk, and verification that /api/raport/student/{sid} returns walas_nip + kehadiran. Frontend (Playwright, 1920x1080): login works, Kelas 7A + Bahasa Indonesia selectable; typing '87' into grade-cell-f1-row-0 shows autosave-status 'Menyimpan...' then 'Tersimpan' within ~2s, value persists after mapel switch; Input Manual: typing into manual-input-f1 shows manual-autosave-status 'Tersimpan', manual-save-button (Berikutnya) advances from AFIFAH ZAHIDAH to AHLAN HANDANA; NIP editor saves 197505051999031005 via PATCH /api/walas/7A and persists after tab switch; Kehadiran dialog saves sakit=2, izin=1, alfa=0, catatan='Bagus, pertahankan' and reopens with persisted values.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Nice: NilaiItem/KehadiranInput Pydantic validators now clamp server-side; closes the previous iteration's note on missing backend input validation for grades.",
+    "seed_data() for walas still only inserts when collection is empty; the new 'nip' field relies on PATCH to populate per class. Harmless, but if seed_data.json ever adds a default nip, existing docs will not pick it up — consider idempotent $setOnInsert for nip.",
+    "/api/kehadiran/{siswa_id} GET returns an in-memory default when no doc exists (not persisted). This is fine, but note: the returned object has no 'kelas' field in the default branch which differs in shape from the stored doc. Minor shape inconsistency; frontend only reads sakit/izin/alfa/catatan so no bug.",
+    "_build_raport_data now returns a 6-tuple; call sites were all updated. Still, a dataclass/TypedDict would make future additions less error-prone.",
+    "CORS_ORIGINS still defaults to '*' with allow_credentials=True (carry-over from iter 1) — not blocking since the app uses Bearer tokens, not cookies."
+  ],
+  "updated_files": ["/app/backend/tests/backend_test.py"],
+  "success_rate": {"backend": "100% (25/25)", "frontend": "100%"},
+  "test_credentials": "guru37JUARA / @123Smp37 (shared, verified).",
+  "seed_data_creation": "No seed added. Tests mutated /api/walas/7A nip, kehadiran for 7A_3141911111 (AFIFAH ZAHIDAH), and a few nilai cells (Matematika + Bahasa Indonesia). All upsert semantics, benign.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "backend_test.py has 25 tests (10 new in this iter: walas get/patch/404, kehadiran default/save/clamp/404, nilai clamp>100, raport student JSON contains walas_nip+kehadiran). Playwright selectors confirmed: login-username-input / login-password-input / login-submit-button, select-kelas-dropdown + kelas-option-7A (shadcn Select — click trigger then page.get_by_role('option', name='Kelas 7A')), select-mapel-dropdown, grade-cell-{f1..s3}-row-{i}, autosave-status, tab-input-manual/tabel/raport/leger, manual-input-{f1..s3}, manual-autosave-status, manual-save-button (Berikutnya), manual-current-name, walas-nip-input, save-nip-button, raport-kehadiran-{i}, keh-sakit-input/keh-izin-input/keh-alfa-input/keh-catatan-input/keh-save-button. Autosave debounce is ~900ms, wait >=2s after typing before asserting 'Tersimpan' and persistence. Note: after login the app routes to '/' (dashboard rendered at root), not '/dashboard' — don't wait_for_url('**/dashboard**').",
+  "rca of the issue": "N/A — no bugs found."
+}
