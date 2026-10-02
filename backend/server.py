@@ -15,6 +15,7 @@ from datetime import datetime, timezone, timedelta
 import logging
 import json
 import io
+import zipfile
 import jwt
 
 # MongoDB connection
@@ -123,6 +124,24 @@ class KehadiranInput(BaseModel):
         return max(0, int(v))
 
 
+class KehadiranBulkItem(BaseModel):
+    siswa_id: str
+    sakit: int = 0
+    izin: int = 0
+    alfa: int = 0
+    catatan: str = ""
+
+    @field_validator("sakit", "izin", "alfa")
+    @classmethod
+    def non_negative(cls, v):
+        return max(0, int(v))
+
+
+class KehadiranBulk(BaseModel):
+    kelas: str
+    items: List[KehadiranBulkItem]
+
+
 class NilaiBulk(BaseModel):
     kelas: str
     mapel: str
@@ -212,6 +231,29 @@ async def set_walas_nip(kelas: str, data: WalasNipInput, user: dict = Depends(ge
     if r.matched_count == 0:
         raise HTTPException(status_code=404, detail="Wali kelas tidak ditemukan")
     return {"status": "ok"}
+
+
+@api_router.get("/kehadiran/kelas/{kelas}")
+async def get_kehadiran_kelas(kelas: str, user: dict = Depends(get_current_user)):
+    siswa = await db.siswa.find({"kelas": kelas}, {"_id": 0}).sort("nama", 1).to_list(1000)
+    docs = await db.kehadiran.find({"kelas": kelas}, {"_id": 0}).to_list(2000)
+    kmap = {d["siswa_id"]: d for d in docs}
+    rows = []
+    for s in siswa:
+        d = kmap.get(s["id"], {})
+        rows.append({"siswa_id": s["id"], "nama": s["nama"], "nisn": s["nisn"],
+                     "sakit": d.get("sakit", 0), "izin": d.get("izin", 0),
+                     "alfa": d.get("alfa", 0), "catatan": d.get("catatan", "")})
+    return rows
+
+
+@api_router.post("/kehadiran/bulk")
+async def save_kehadiran_bulk(data: KehadiranBulk, user: dict = Depends(get_current_user)):
+    for item in data.items:
+        doc = item.model_dump()
+        doc.update({"kelas": data.kelas})
+        await db.kehadiran.update_one({"siswa_id": item.siswa_id}, {"$set": doc}, upsert=True)
+    return {"status": "ok", "saved": len(data.items)}
 
 
 @api_router.get("/kehadiran/{siswa_id}")
@@ -427,6 +469,24 @@ async def raport_pdf_kelas(kelas: str, user: dict = Depends(get_current_user)):
     buf = _render_pdf(all_rows)
     return StreamingResponse(buf, media_type="application/pdf",
                              headers={"Content-Disposition": f'attachment; filename="Raport_Kelas_{kelas}.pdf"'})
+
+
+@api_router.get("/raport/zip/{kelas}")
+async def raport_zip_kelas(kelas: str, user: dict = Depends(get_current_user)):
+    mapel_list, siswa, nmap, walas, walas_nip, kmap = await _build_raport_data(kelas)
+    if not siswa:
+        raise HTTPException(status_code=404, detail="Kelas tidak ditemukan")
+    zip_buf = io.BytesIO()
+    with zipfile.ZipFile(zip_buf, "w", zipfile.ZIP_DEFLATED) as zf:
+        for s in siswa:
+            sm = nmap.get(s["id"], {})
+            rows = [{"mapel": m, "kktp": KKTP, **{k: sm.get(m, {}).get(k) for k in ["f1", "f2", "f3", "s1", "s2", "s3"]}} for m in mapel_list]
+            pdf = _render_pdf([(s, walas, walas_nip, rows, kmap.get(s["id"], {}))])
+            fname = f"Raport_{s['nama'].replace(' ', '_')}_{kelas}.pdf"
+            zf.writestr(fname, pdf.read())
+    zip_buf.seek(0)
+    return StreamingResponse(zip_buf, media_type="application/zip",
+                             headers={"Content-Disposition": f'attachment; filename="Raport_{kelas}_per_siswa.zip"'})
 
 
 # ---------------- Excel Leger ----------------

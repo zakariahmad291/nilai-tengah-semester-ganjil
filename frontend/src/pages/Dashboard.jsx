@@ -5,6 +5,7 @@ import GradeGrid from "@/components/GradeGrid";
 import ManualEntry from "@/components/ManualEntry";
 import RaportSection from "@/components/RaportSection";
 import LegerSection from "@/components/LegerSection";
+import KehadiranGrid from "@/components/KehadiranGrid";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import {
   Select,
@@ -13,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Table2, PenLine, Printer, FileSpreadsheet, Users } from "lucide-react";
+import { Table2, PenLine, Printer, FileSpreadsheet, Users, CalendarCheck } from "lucide-react";
 
 export default function Dashboard() {
   const [kelasList, setKelasList] = useState([]);
@@ -91,12 +92,15 @@ export default function Dashboard() {
           <EmptyState />
         ) : (
           <Tabs value={tab} onValueChange={setTab} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 sm:w-auto sm:inline-grid sm:grid-cols-4 h-auto p-1">
+            <TabsList className="grid w-full grid-cols-2 sm:w-auto sm:inline-grid sm:grid-cols-5 h-auto p-1">
               <TabsTrigger value="tabel" data-testid="tab-input-tabel" className="gap-2 py-2.5">
                 <Table2 className="h-4 w-4" /> <span className="hidden sm:inline">Input</span> Tabel
               </TabsTrigger>
               <TabsTrigger value="manual" data-testid="tab-input-manual" className="gap-2 py-2.5">
                 <PenLine className="h-4 w-4" /> <span className="hidden sm:inline">Input</span> Manual
+              </TabsTrigger>
+              <TabsTrigger value="kehadiran" data-testid="tab-kehadiran" className="gap-2 py-2.5">
+                <CalendarCheck className="h-4 w-4" /> Kehadiran
               </TabsTrigger>
               <TabsTrigger value="raport" data-testid="tab-raport" className="gap-2 py-2.5">
                 <Printer className="h-4 w-4" /> Raport
@@ -111,6 +115,9 @@ export default function Dashboard() {
             </TabsContent>
             <TabsContent value="manual" className="mt-6">
               {mapel ? <ManualEntry kelas={kelas} mapel={mapel} /> : <NeedMapel />}
+            </TabsContent>
+            <TabsContent value="kehadiran" className="mt-6">
+              <KehadiranGrid kelas={kelas} />
             </TabsContent>
             <TabsContent value="raport" className="mt-6">
               <RaportSection kelas={kelas} walas={currentKelas?.walas} />

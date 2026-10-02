@@ -6,6 +6,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { CATATAN_TEMPLATES } from "@/lib/catatanTemplates";
+import {
   Dialog,
   DialogContent,
   DialogHeader,
@@ -24,6 +32,7 @@ import {
   Save,
   ClipboardList,
   IdCard,
+  FileArchive,
 } from "lucide-react";
 
 export default function RaportSection({ kelas, walas }) {
@@ -40,6 +49,7 @@ export default function RaportSection({ kelas, walas }) {
   const [kehForm, setKehForm] = useState({ sakit: 0, izin: 0, alfa: 0, catatan: "" });
   const [kehLoading, setKehLoading] = useState(false);
   const [kehSaving, setKehSaving] = useState(false);
+  const [zipBusy, setZipBusy] = useState(false);
 
   const load = useCallback(() => {
     setLoading(true);
@@ -148,6 +158,18 @@ export default function RaportSection({ kelas, walas }) {
     }
   };
 
+  const downloadZip = async () => {
+    setZipBusy(true);
+    try {
+      await downloadFile(`/raport/zip/${kelas}`, `Raport_${kelas}_per_siswa.zip`);
+      toast.success("ZIP raport (PDF per siswa) berhasil diunduh.");
+    } catch {
+      toast.error("Gagal mengunduh ZIP raport.");
+    } finally {
+      setZipBusy(false);
+    }
+  };
+
   const filtered = siswa.filter((s) => s.nama.toLowerCase().includes(q.toLowerCase()));
 
   return (
@@ -185,6 +207,16 @@ export default function RaportSection({ kelas, walas }) {
             >
               {classBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
               Unduh PDF
+            </Button>
+            <Button
+              variant="outline"
+              onClick={downloadZip}
+              disabled={zipBusy}
+              className="gap-2"
+              data-testid="download-raport-zip-button"
+            >
+              {zipBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileArchive className="h-4 w-4" />}
+              Unduh ZIP
             </Button>
           </div>
         </div>
@@ -323,6 +355,21 @@ export default function RaportSection({ kelas, walas }) {
                     />
                   </div>
                 ))}
+              </div>
+              <div className="space-y-1.5">
+                <Label>Template Catatan (opsional)</Label>
+                <Select onValueChange={(v) => setKehForm((f) => ({ ...f, catatan: v }))}>
+                  <SelectTrigger data-testid="keh-template-select">
+                    <SelectValue placeholder="Pilih template lalu sesuaikan" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {CATATAN_TEMPLATES.map((t, i) => (
+                      <SelectItem key={i} value={t} className="text-xs whitespace-normal max-w-sm">
+                        {t}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
               <div className="space-y-1.5">
                 <Label>Catatan Wali Kelas</Label>
