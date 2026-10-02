@@ -9,7 +9,7 @@ from fastapi import FastAPI, APIRouter, HTTPException, Depends, Request, Query
 from fastapi.responses import StreamingResponse
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from typing import List, Optional
 from datetime import datetime, timezone, timedelta
 import logging
@@ -98,6 +98,13 @@ class NilaiItem(BaseModel):
     s1: Optional[float] = None
     s2: Optional[float] = None
     s3: Optional[float] = None
+
+    @field_validator("f1", "f2", "f3", "s1", "s2", "s3")
+    @classmethod
+    def clamp_range(cls, v):
+        if v is None:
+            return None
+        return max(0.0, min(100.0, float(v)))
 
 
 class NilaiBulk(BaseModel):
